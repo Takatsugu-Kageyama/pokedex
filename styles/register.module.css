@@ -1,0 +1,11 @@
+.form_wrap {
+  @apply font-abMegadot9;
+}
+.form_wrap .from_container .r_list {
+  @apply table;
+}
+.form_wrap .from_container .r_list dt {
+  @apply table-cell align-middle;
+}
+
+/*# sourceMappingURL=register.module.css.map */

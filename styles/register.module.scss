@@ -1,0 +1,11 @@
+.form_wrap {
+  @apply font-abMegadot9;
+  .from_container {
+    .r_list {
+      @apply table;
+      dt {
+        @apply table-cell align-middle;
+      }
+    }
+  }
+}
