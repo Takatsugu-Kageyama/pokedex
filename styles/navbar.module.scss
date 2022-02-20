@@ -1,0 +1,25 @@
+.nav_wrapper {
+  @apply font-abMegadot9 bg-navColor;
+  .nav_container {
+    @apply w-[90%] mx-auto flex py-[10px];
+    .main_title {
+      p {
+        &:hover {
+          @apply lg:opacity-50;
+        }
+      }
+    }
+
+    .nav_menu {
+      @apply w-[300] ml-auto pr-[15px];
+      .ul {
+        @apply flex gap-11;
+        li {
+          &:hover {
+            @apply lg:opacity-50;
+          }
+        }
+      }
+    }
+  }
+}

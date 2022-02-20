@@ -1,0 +1,20 @@
+.nav_wrapper {
+  @apply font-abMegadot9 bg-navColor;
+}
+.nav_wrapper .nav_container {
+  @apply w-[90%] mx-auto flex py-[10px];
+}
+.nav_wrapper .nav_container .main_title p:hover {
+  @apply lg:opacity-50;
+}
+.nav_wrapper .nav_container .nav_menu {
+  @apply w-[300] ml-auto pr-[15px];
+}
+.nav_wrapper .nav_container .nav_menu .ul {
+  @apply flex gap-11;
+}
+.nav_wrapper .nav_container .nav_menu .ul li:hover {
+  @apply lg:opacity-50;
+}
+
+/*# sourceMappingURL=navbar.module.css.map */
