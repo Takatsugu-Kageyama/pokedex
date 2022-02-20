@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className={styles.nav_menu}>
           <ul className={styles.ul}>
             <li>
-              <Link href="/">マイページ</Link>
+              <Link href="/register">マイページ</Link>
             </li>
             <li>
               <Link href="/">人気のポケモン</Link>

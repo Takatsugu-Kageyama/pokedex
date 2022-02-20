@@ -9,8 +9,8 @@ import { Button, TextField, ButtonBase } from "@mui/material";
 
 // Define type of values:
 interface Values {
-  username: string;
-  passwords: string;
+  username: string; // type of string
+  passwords: string; // type of string
 }
 
 // Login component
@@ -18,10 +18,12 @@ const Login = () => {
   return (
     <>
       <Formik
+        // initial input value
         initialValues={{
           username: "",
           passwords: "",
         }}
+        // when the button is pushed:
         onSubmit={(
           values: Values,
           { setSubmitting }: FormikHelpers<Values>
