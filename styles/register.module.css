@@ -1,11 +1,17 @@
 .form_wrap {
   @apply font-abMegadot9;
 }
+.form_wrap h2 {
+  @apply text-center text-[24px] mb-[65px];
+}
 .form_wrap .from_container .r_list {
-  @apply table;
+  @apply table mx-auto w-[300px] py-[20px];
 }
 .form_wrap .from_container .r_list dt {
-  @apply table-cell align-middle;
+  @apply table-cell align-middle text-[18px];
+}
+.form_wrap .from_container .r_list dd {
+  @apply table-cell;
 }
 
 /*# sourceMappingURL=register.module.css.map */

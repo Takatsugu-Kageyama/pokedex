@@ -1,10 +1,18 @@
 .form_wrap {
   @apply font-abMegadot9;
+  h2 {
+    @apply text-center text-[24px] mb-[65px];
+  }
+
   .from_container {
     .r_list {
-      @apply table;
+      @apply table mx-auto w-[300px] py-[20px];
       dt {
-        @apply table-cell align-middle;
+        @apply table-cell align-middle text-[18px];
+      }
+
+      dd {
+        @apply table-cell ;
       }
     }
   }

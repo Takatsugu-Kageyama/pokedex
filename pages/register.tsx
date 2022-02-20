@@ -66,6 +66,26 @@ const Register = () => {
                 </dd>
               </dl>
               <dl className={styles.r_list}>
+                <dt>せいべつ</dt>
+                <dd>
+                  <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+                    <InputLabel id="demo-simple-select-standard-label">
+                      せいべつ
+                    </InputLabel>
+                    <Select
+                      labelId="demo-simple-select-standard-label"
+                      id="demo-simple-select-standard"
+                      value={age}
+                      onChange={handleChange}
+                      label="Age"
+                    >
+                      <MenuItem value="カントー">おとこ</MenuItem>
+                      <MenuItem value="ジョウト">おんな</MenuItem>
+                    </Select>
+                  </FormControl>
+                </dd>
+              </dl>
+              <dl className={styles.r_list}>
                 <dt>ちほう</dt>
                 <dd>
                   <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>

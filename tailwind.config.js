@@ -9,7 +9,7 @@ module.exports = {
         abMegadot9: ["ab-megadot9"],
       },
       colors: {
-        navColor: "#F7931E",
+        navColor: "#C7C9B0",
         formColor: "#FF0000",
       },
     },
