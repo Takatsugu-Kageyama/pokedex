@@ -1,9 +1,10 @@
 .nav_wrapper {
   @apply font-abMegadot9 bg-navColor;
   .nav_container {
-    @apply w-[90%] mx-auto flex py-[10px];
+    @apply w-[90%] mx-auto flex py-[15px];
     .main_title {
       p {
+        @apply text-[18px];
         &:hover {
           @apply lg:opacity-50;
         }
@@ -15,6 +16,7 @@
       .ul {
         @apply flex gap-11;
         li {
+          @apply text-[18px];
           &:hover {
             @apply lg:opacity-50;
           }
