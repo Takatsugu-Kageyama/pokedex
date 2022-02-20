@@ -1,5 +1,5 @@
-import Navbar from "./navbar";
 import { NextPage } from "next";
+import Navbar from "./navbar";
 
 const Layout: NextPage = ({ children }) => {
   return (
