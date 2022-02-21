@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   `,
           }}
         />
-        <title>かわいいポケモン図鑑</title>
+        <title>なつかしいポケモン図鑑</title>
       </Head>
       <Login />
     </>

@@ -1,17 +1,70 @@
-.form_wrap {
-  @apply flex justify-center mt-[100px];
+@charset "UTF-8";
+.overall {
+  @apply h-full bg-bgColor;
 }
-.form_wrap .form_container {
-  @apply flex flex-col w-[500px] gap-5 font-abMegadot9 border;
+.overall .form_wrap {
+  @apply flex justify-center pt-[100px];
 }
-.form_wrap .form_container .head {
+.overall .form_wrap .form_container {
+  @apply flex flex-col w-[500px] gap-5 font-abMegadot9;
+  border: 2px dashed #000;
+  border-top: none;
+}
+.overall .form_wrap .form_container .head {
   @apply bg-formColor text-center py-2;
 }
-.form_wrap .form_container .input {
+.overall .form_wrap .form_container .input_area {
   @apply w-[80%] mx-auto;
 }
-.form_wrap .form_container .btn {
+.overall .form_wrap .form_container .input_area .input {
+  @apply w-full font-abMegadot9;
+}
+.overall .form_wrap .form_container .input_area .error_text {
+  @apply text-formColor text-[12px];
+}
+.overall .form_wrap .form_container .btn {
   @apply bg-gray-400 font-abMegadot9 text-black w-[40%] mx-auto mb-6;
+}
+.overall .ano_btn {
+  @apply flex justify-center gap-20 font-abMegadot9 pt-[25px];
+}
+.overall .ano_btn .n_log_btn {
+  position: relative;
+  padding: 0 0 0 24px;
+}
+.overall .ano_btn .n_log_btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* 縦軸をセンタリングする */
+  left: 0;
+  transform: translateY(-50%);
+  /* 縦軸をセンタリングする */
+  border: 10px solid transparent;
+  border-left: 16px solid #000000;
+  /* 好みで色を変えてください */
+}
+.overall .ano_btn .n_log_btn:hover {
+  @apply lg:opacity-50;
+}
+.overall .ano_btn .register_btn {
+  position: relative;
+  padding: 0 0 0 24px;
+}
+.overall .ano_btn .register_btn::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  /* 縦軸をセンタリングする */
+  left: 0;
+  transform: translateY(-50%);
+  /* 縦軸をセンタリングする */
+  border: 10px solid transparent;
+  border-left: 16px solid #000000;
+  /* 好みで色を変えてください */
+}
+.overall .ano_btn .register_btn:hover {
+  @apply lg:opacity-50;
 }
 
 /*# sourceMappingURL=login.module.css.map */
