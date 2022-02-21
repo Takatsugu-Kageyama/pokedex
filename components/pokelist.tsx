@@ -1,14 +1,27 @@
 import styles from "../styles/pokelist.module.scss";
 import Pokecard from "./pokecard";
+import { PokemonSchema } from "../util/pokemonSchema";
 
-const Pokelist = () => {
+interface PokeListProps {
+  searchedPokemons: PokemonSchema[];
+  onPokemonClick: (inputValue: string) => void;
+}
+
+const Pokelist = ({ searchedPokemons, onPokemonClick }: PokeListProps) => {
   return (
     <div className={styles.pokelist}>
-      <Pokecard name="ピカチュウ" />
-      <Pokecard name="フシギダネ" />
-      <Pokecard name="フシギソウ" />
-      <Pokecard name="フシギバナ" />
-      <Pokecard name="ヒトカゲ" />
+      {searchedPokemons.map((pokemon) => {
+        return (
+          pokemon.name && (
+            <Pokecard
+              onPokemonClick={onPokemonClick}
+              key={pokemon.id}
+              name={pokemon.name}
+              spriteUrl={pokemon.sprites?.normal}
+            />
+          )
+        );
+      })}
     </div>
   );
 };

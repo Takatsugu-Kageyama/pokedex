@@ -1,16 +1,26 @@
 import styles from "../styles/pokeSearchResult.module.scss";
+import { PokemonSchema } from "../util/pokemonSchema";
 
-const PokeSearchResult = () => {
-  const selectPokemon = false;
+interface PokeSearchResultProps {
+  selectedPokemon: PokemonSchema | undefined;
+}
+
+const PokeSearchResult = ({ selectedPokemon }: PokeSearchResultProps) => {
+  const { name, id, height, weight, sprites } = selectedPokemon || {};
   return (
     <div className={styles.poke_result_card}>
-      {selectPokemon ? (
+      {selectedPokemon ? (
         <div>
           {/*Add the image here*/}
-          <p>なまえ：ピカチュウ</p>
-          <p>ばんごう：</p>
-          <p>たかさ：</p>
-          <p>おおきさ：</p>
+          <img
+            className={styles.pokemon_animated_sprite}
+            src={sprites?.animated || sprites?.normal}
+            alt=""
+          />
+          <p>なまえ：{name}</p>
+          <p>ばんごう：{id}</p>
+          <p>たかさ：{height}</p>
+          <p>おもさ：{weight}</p>
         </div>
       ) : (
         <h2>ポケモンずかんへようこそ</h2>

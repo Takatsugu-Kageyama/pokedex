@@ -7,4 +7,8 @@
   &:hover {
     transform: scale(1.05);
   }
+
+  .pokemon_sprite {
+    @apply h-[85px];
+  }
 }
