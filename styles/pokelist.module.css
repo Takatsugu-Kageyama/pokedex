@@ -1,0 +1,5 @@
+.pokelist {
+  @apply flex items-start flex-wrap;
+}
+
+/*# sourceMappingURL=pokelist.module.css.map */

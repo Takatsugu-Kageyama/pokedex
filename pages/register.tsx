@@ -1,9 +1,9 @@
 // import style sheet
 import styles from "../styles/register.module.scss";
 //import state
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import Formik
-import { useFormik } from "formik";
+import { useFormik, Formik, Form, Field } from "formik";
 // import Material UI
 import { Button, TextField } from "@mui/material";
 import Menu, { MenuProps } from "@mui/material/Menu";
@@ -18,8 +18,6 @@ import Head from "next/head";
 //The input value type of the form to create:
 type FormValueType = {
   username: string;
-  gender: string;
-  country: string;
   password: string | number;
 };
 
@@ -33,21 +31,12 @@ const onSubmit = (values: FormValueType) => {
 type FormErrorType = {
   [P in keyof FormValueType]?: string | number;
 };
-
 //validate function:
 const validate = (values: FormValueType): FormErrorType => {
   const errors: FormErrorType = {};
   //Username Error
   if (!values.username) {
     errors.username = "おなまえを入力してください。";
-  }
-  //Gender Error
-  if (!values.gender) {
-    errors.gender = "せいべつを入力してください。";
-  }
-  //CountryError
-  if (!values.country) {
-    errors.country = "ちほうを入力してください。";
   }
   //Password Error
   if (!values.password) {
@@ -57,15 +46,9 @@ const validate = (values: FormValueType): FormErrorType => {
 };
 /*-----------------------------Register component--------------------------*/
 const Register = () => {
-  const [age, setAge] = useState("");
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value);
-  };
-
   // Define form:
   const formik = useFormik<FormValueType>({
-    initialValues: { username: "", gender: "", country: "", password: "" }, // First interface values
+    initialValues: { username: "", password: "" }, // First interface values
     validate: validate, //validation
     onSubmit: onSubmit, //onSubmit Function
   });
@@ -111,56 +94,11 @@ const Register = () => {
             </dl>
             <dl className={styles.r_list}>
               <dt>せいべつ</dt>
-              <dd>
-                <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-                  <InputLabel id="demo-simple-select-standard-label">
-                    せいべつ
-                  </InputLabel>
-                  <Select
-                    value={formik.values.gender} // value name
-                    labelId="demo-simple-select-standard-label"
-                    id="demo-simple-select-standard"
-                    onChange={formik.handleChange}
-                    label="Age"
-                  >
-                    <MenuItem value="カントー">おとこ</MenuItem>
-                    <MenuItem value="ジョウト">おんな</MenuItem>
-                  </Select>
-                </FormControl>
-                {formik.errors.password ? (
-                  <p className={styles.error_text}>{formik.errors.gender}</p>
-                ) : null}
-              </dd>
+              <dd></dd>
             </dl>
             <dl className={styles.r_list}>
               <dt>ちほう</dt>
-              <dd>
-                <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-                  <InputLabel id="demo-simple-select-standard-label">
-                    ちほう
-                  </InputLabel>
-                  <Select
-                    labelId="demo-simple-select-standard-label"
-                    id="demo-simple-select-standard"
-                    value={formik.values.country}
-                    onChange={formik.handleChange}
-                    label="Age"
-                  >
-                    <MenuItem value="カントー">カントーちほう</MenuItem>
-                    <MenuItem value="ジョウト">ジョウトちほう</MenuItem>
-                    <MenuItem value="ホウエン">ホウエンちほう</MenuItem>
-                    <MenuItem value="シンオウ">シンオウちほう</MenuItem>
-                    <MenuItem value="ヒスイ">ヒスイちほう</MenuItem>
-                    <MenuItem value="イッシュ">イッシュちほう</MenuItem>
-                    <MenuItem value="カロス">カロスちほう</MenuItem>
-                    <MenuItem value="アローラ">アローラちほう</MenuItem>
-                    <MenuItem value="ガラル">ガラルちほう</MenuItem>
-                  </Select>
-                </FormControl>
-                {formik.errors.password ? (
-                  <p className={styles.error_text}>{formik.errors.country}</p>
-                ) : null}
-              </dd>
+              <dd></dd>
             </dl>
             <dl className={styles.r_list}>
               <dt>パスワード</dt>

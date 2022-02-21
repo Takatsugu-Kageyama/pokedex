@@ -13,6 +13,7 @@ module.exports = {
         formColor: "#FF0000",
         bgColor: "#D3E2CB",
         footerColor: "#626953",
+        listColor: "#8CC63F",
       },
     },
   },

@@ -1,0 +1,13 @@
+.pokedex_container {
+  @apply font-abMegadot9 ml-[15%] w-[70%] min-h-[475px] flex flex-wrap border-2 border-black rounded-[12px];
+}
+.pokedex_container .pokelist_container {
+  @apply w-[300px] h-[455px] overflow-y-scroll m-[10px] grow-[3] bg-listColor/10;
+  border-radius: 10px 1px 1px 10px;
+}
+.pokedex_container .pokesearchresult_container {
+  @apply flex items-center w-[300px] grow-[1] m-[10px] bg-listColor/10;
+  border-radius: 10px 1px 1px 10px;
+}
+
+/*# sourceMappingURL=pokedexNonUser.module.css.map */

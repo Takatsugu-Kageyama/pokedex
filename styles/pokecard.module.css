@@ -1,0 +1,11 @@
+.pokecard {
+  @apply flex flex-col items-center bg-footerColor/50 border-2 border-black rounded-[5px] cursor-pointer m-[10px] w-[150px] grow-[1];
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transfrom 0.25s ease-out;
+}
+.pokecard:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=pokecard.module.css.map */

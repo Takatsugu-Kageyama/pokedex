@@ -116,7 +116,7 @@ const Login = () => {
             <Link href="/register">はじめてのログイン</Link>
           </div>
           <div className={styles.register_btn}>
-            <Link href="/">ログインしないでみる</Link>
+            <Link href="/pokedexNonUser">ログインしないでみる</Link>
           </div>
         </div>
       </div>
