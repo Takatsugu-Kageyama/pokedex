@@ -12,7 +12,7 @@ module.exports = {
         navColor: "#C7C9B0",
         formColor: "#FF0000",
         bgColor: "#D3E2CB",
-        footerColor: "#1D2905",
+        footerColor: "#626953",
       },
     },
   },

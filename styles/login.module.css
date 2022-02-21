@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .overall {
-  @apply h-full bg-bgColor;
+  @apply h-[100vh];
 }
 .overall .form_wrap {
   @apply flex justify-center pt-[100px];
