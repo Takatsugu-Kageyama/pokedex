@@ -1,9 +1,9 @@
 .overall {
-  @apply h-[100vh];
+  @apply h-[100vh] font-DotGothic16 font-black;
   .form_wrap {
     @apply flex justify-center pt-[100px];
     .form_container {
-      @apply flex flex-col w-[500px] gap-5 font-abMegadot9;
+      @apply flex flex-col w-[500px] gap-5;
       border: 2px dashed #000;
       border-top: none;
 
@@ -14,7 +14,7 @@
       .input_area {
         @apply w-[80%] mx-auto;
         .input {
-          @apply w-full font-abMegadot9;
+          @apply w-full;
         }
 
         .error_text {
@@ -23,14 +23,15 @@
       }
 
       .btn {
-        @apply bg-gray-400 font-abMegadot9 text-black w-[40%] mx-auto mb-6;
+        @apply font-DotGothic16 font-black bg-gray-400 text-black w-[40%] mx-auto mb-6;
       }
     }
   }
 
   .ano_btn {
-    @apply flex justify-center gap-20 font-abMegadot9 pt-[25px];
+    @apply font-DotGothic16 font-black flex justify-center gap-20 pt-[25px];
     .n_log_btn {
+      @apply font-DotGothic16 font-black;
       position: relative;
       padding: 0 0 0 24px;
 
@@ -50,6 +51,7 @@
     }
 
     .register_btn {
+      @apply font-DotGothic16 font-black;
       position: relative;
       padding: 0 0 0 24px;
 

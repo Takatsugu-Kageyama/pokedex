@@ -1,8 +1,8 @@
 .footer {
-  @apply bg-footerColor;
+  @apply font-DotGothic16 font-black bg-footerColor;
 }
 .footer p {
-  @apply font-abMegadot9 text-center py-[12px];
+  @apply text-center py-[12px];
 }
 
 /*# sourceMappingURL=footer.module.css.map */

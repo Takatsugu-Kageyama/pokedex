@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .overall {
-  @apply h-[100vh];
+  @apply h-[100vh] font-DotGothic16 font-black;
 }
 .overall .form_wrap {
   @apply flex justify-center pt-[100px];
 }
 .overall .form_wrap .form_container {
-  @apply flex flex-col w-[500px] gap-5 font-abMegadot9;
+  @apply flex flex-col w-[500px] gap-5;
   border: 2px dashed #000;
   border-top: none;
 }
@@ -17,18 +17,19 @@
   @apply w-[80%] mx-auto;
 }
 .overall .form_wrap .form_container .input_area .input {
-  @apply w-full font-abMegadot9;
+  @apply w-full;
 }
 .overall .form_wrap .form_container .input_area .error_text {
   @apply text-formColor text-[12px];
 }
 .overall .form_wrap .form_container .btn {
-  @apply bg-gray-400 font-abMegadot9 text-black w-[40%] mx-auto mb-6;
+  @apply font-DotGothic16 font-black bg-gray-400 text-black w-[40%] mx-auto mb-6;
 }
 .overall .ano_btn {
-  @apply flex justify-center gap-20 font-abMegadot9 pt-[25px];
+  @apply font-DotGothic16 font-black flex justify-center gap-20 pt-[25px];
 }
 .overall .ano_btn .n_log_btn {
+  @apply font-DotGothic16 font-black;
   position: relative;
   padding: 0 0 0 24px;
 }
@@ -48,6 +49,7 @@
   @apply lg:opacity-50;
 }
 .overall .ano_btn .register_btn {
+  @apply font-DotGothic16 font-black;
   position: relative;
   padding: 0 0 0 24px;
 }

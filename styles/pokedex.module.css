@@ -1,5 +1,5 @@
 .pokedex_container {
-  @apply font-abMegadot9 my-[70px] ml-[15%] w-[70%] min-h-[575px] flex flex-wrap border-2 border-black rounded-[12px];
+  @apply font-DotGothic16 font-black my-[70px] ml-[15%] w-[70%] min-h-[575px] flex flex-wrap border-2 border-black rounded-[12px];
 }
 .pokedex_container .pokelist_container {
   @apply w-[300px] h-[555px] overflow-y-scroll m-[10px] grow-[3] bg-listColor/10;

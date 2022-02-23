@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        abMegadot9: ["ab-megadot9"],
+        DotGothic16: ["DotGothic16"],
       },
       colors: {
         navColor: "#C7C9B0",

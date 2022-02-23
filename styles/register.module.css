@@ -1,5 +1,5 @@
 .form_wrap {
-  @apply font-abMegadot9 w-fit mx-auto my-[50px] px-[70px] py-[30px] lg:px-[170px] lg:py-[50px];
+  @apply w-fit font-DotGothic16 mx-auto my-[50px] px-[70px] py-[30px] lg:px-[170px] lg:py-[50px];
   border: 2px dashed #000;
 }
 .form_wrap h2 {
@@ -22,7 +22,7 @@
   @apply flex justify-center pt-[20px];
 }
 .form_wrap .from_container .btn_wrap .btn {
-  @apply bg-gray-400 font-abMegadot9 text-black w-[40%] mx-auto;
+  @apply bg-gray-400 text-black w-[40%] mx-auto;
 }
 
 /*# sourceMappingURL=register.module.css.map */

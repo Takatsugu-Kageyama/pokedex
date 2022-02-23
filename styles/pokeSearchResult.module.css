@@ -1,5 +1,5 @@
 .poke_result_card {
-  @apply font-abMegadot9 flex flex-col items-center bg-footerColor/50 border-2 border-black rounded-[5px] m-[10px] p-[10px] grow-[1];
+  @apply flex flex-col items-center bg-footerColor/50 border-2 border-black rounded-[5px] m-[10px] p-[10px] grow-[1];
 }
 
 .pokemon_animated_sprite {

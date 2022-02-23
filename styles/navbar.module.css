@@ -1,11 +1,11 @@
 .nav_wrapper {
-  @apply font-abMegadot9 bg-navColor;
+  @apply bg-navColor font-DotGothic16 font-black;
 }
 .nav_wrapper .nav_container {
   @apply w-[90%] mx-auto flex py-[15px];
 }
 .nav_wrapper .nav_container .main_title p {
-  @apply text-[18px];
+  @apply text-[24px];
 }
 .nav_wrapper .nav_container .main_title p:hover {
   @apply lg:opacity-50;
@@ -17,7 +17,7 @@
   @apply flex gap-11;
 }
 .nav_wrapper .nav_container .nav_menu .ul li {
-  @apply text-[18px];
+  @apply text-[24px];
 }
 .nav_wrapper .nav_container .nav_menu .ul li:hover {
   @apply lg:opacity-50;
