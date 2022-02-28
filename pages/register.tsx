@@ -36,12 +36,7 @@ const Register: FC = () => {
         onSubmit={(values: FormValuesType, { setSubmitting }) => {
           setTimeout(() => {
             console.log(values.username);
-            pushUser(
-              values.username,
-              values.gender,
-              values.country,
-              values.password
-            );
+            pushUser(values);
             setSubmitting(false);
           }, 400);
         }}

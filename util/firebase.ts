@@ -24,12 +24,12 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 const postListRef = ref(db, "users");
 
-export const pushUser = (
-  username: string,
-  gender: string,
-  country: string,
-  password: string
-) => {
+export const pushUser = ({
+  username,
+  gender,
+  country,
+  password,
+}: FormValuesType) => {
   push(postListRef, {
     username,
     gender,
