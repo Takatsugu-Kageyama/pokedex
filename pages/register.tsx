@@ -3,7 +3,7 @@ import styles from "../styles/register.module.scss";
 //import state
 import { useEffect, useState } from "react";
 // import Formik
-import { useFormik, Formik, Form, Field } from "formik";
+import { Formik, Form, Field, FormikHelpers, ErrorMessage } from "formik";
 // import Material UI
 import { Button, TextField } from "@mui/material";
 import Menu, { MenuProps } from "@mui/material/Menu";
@@ -11,114 +11,217 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
+//import yup
+import * as Yup from "yup";
 import Head from "next/head";
+import Box from "@mui/material/Box";
 
 /*-------------------------------Formik settings----------------------------*/
 
 //The input value type of the form to create:
-type FormValueType = {
+interface FormValuesType {
   username: string;
-  password: string | number;
-};
+  password: string;
+}
 
-//Sending process:
-const onSubmit = (values: FormValueType) => {
-  alert(JSON.stringify(values, null, 2));
-};
-/**Create error: **/
+//Validation
+const formValidation = Yup.object().shape({
+  username: Yup.string().required("おなまえは必須項目です。"),
+  password: Yup.string()
+    .required("パスワードは必須項目です。")
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+      "大文字と小文字、数字を含めた８文字のパスワードで設定してください。"
+    ),
+});
 
-// Define error type:
-type FormErrorType = {
-  [P in keyof FormValueType]?: string | number;
-};
-//validate function:
-const validate = (values: FormValueType): FormErrorType => {
-  const errors: FormErrorType = {};
-  //Username Error
-  if (!values.username) {
-    errors.username = "おなまえを入力してください。";
-  }
-  //Password Error
-  if (!values.password) {
-    errors.password = "パスワードを入力してください。";
-  }
-  return errors;
-};
+//Gender Select values
+const genderSelect = [
+  {
+    value: "おとこ",
+    label: "おとこ",
+  },
+  {
+    value: "おんな",
+    label: "おんな",
+  },
+];
+
+//Country Select values
+const countrySelect = [
+  {
+    value: "カントーちほう",
+    label: "カントーちほう",
+  },
+  {
+    value: "ジョウトちほう",
+    label: "ジョウトちほう",
+  },
+  {
+    value: "ホウエンちほう",
+    label: "ホウエンちほう",
+  },
+  {
+    value: "シンオウちほう",
+    label: "シンオウちほう",
+  },
+  {
+    value: "ヒスイちほう",
+    label: "ヒスイちほう",
+  },
+  {
+    value: "イッシュちほう",
+    label: "イッシュちほう",
+  },
+  {
+    value: "カロスちほう",
+    label: "カロスちほう",
+  },
+  {
+    value: "アローラちほう",
+    label: "アローラちほう",
+  },
+  {
+    value: "ガラルちほう",
+    label: "ガラルちほう",
+  },
+];
+
 /*-----------------------------Register component--------------------------*/
 const Register = () => {
-  // Define form:
-  const formik = useFormik<FormValueType>({
-    initialValues: { username: "", password: "" }, // First interface values
-    validate: validate, //validation
-    onSubmit: onSubmit, //onSubmit Function
-  });
   return (
     <>
       <Head>
         <title>かわいいポケモン図鑑 | とうろくがめん</title>
       </Head>
-      <form onSubmit={formik.handleSubmit}>
-        <div className={styles.form_wrap}>
-          <h2>登録画面</h2>
-          <div className={styles.from_container}>
-            <dl className={styles.r_list}>
-              <dt>おなまえ</dt>
-              <dd>
-                <TextField
-                  onChange={formik.handleChange} // Get the input value. just like e.target.value
-                  value={formik.values.username} // value name
-                  className={styles.input}
-                  name="username"
-                  id="outlined-basic"
-                  label="なまえ"
-                  variant="outlined"
-                />
-                {formik.errors.password ? (
-                  <p className={styles.error_text}>{formik.errors.username}</p>
-                ) : null}
-              </dd>
-            </dl>
-            <dl className={styles.r_list}>
-              <dt>せいべつ</dt>
-              <dd></dd>
-            </dl>
-            <dl className={styles.r_list}>
-              <dt>ちほう</dt>
-              <dd></dd>
-            </dl>
-            <dl className={styles.r_list}>
-              <dt>パスワード</dt>
-              <dd>
-                <TextField
-                  onChange={formik.handleChange} //Get input value
-                  value={formik.values.password} // value name
-                  className={styles.input}
-                  name="password"
-                  type="password"
-                  id="outlined-basic"
-                  label="パスワード"
-                  variant="outlined"
-                />
-                {formik.errors.password ? (
-                  <p className={styles.error_text}>{formik.errors.password}</p>
-                ) : null}
-              </dd>
-            </dl>
-            <div className={styles.btn_wrap}>
-              <Button
-                onSubmit={() => {
-                  formik.handleSubmit();
-                }}
-                className={styles.btn}
-                type="submit"
-                variant="contained"
-              >
-                送信する
-              </Button>
+      <Formik
+        initialValues={{
+          username: "",
+          password: "",
+        }}
+        validationSchema={formValidation}
+        onSubmit={(
+          values: FormValuesType,
+          { setSubmitting }: FormikHelpers<FormValuesType>
+        ) => {
+          setTimeout(() => {
+            alert(JSON.stringify(values, null, 2));
+            setSubmitting(false);
+          }, 500);
+        }}
+      >
+        <Form>
+          <div className={styles.form_wrap}>
+            <h2>登録画面</h2>
+            <div className={styles.from_container}>
+              <dl className={styles.r_list}>
+                <dt>おなまえ</dt>
+                <dd>
+                  <Box
+                    component="form"
+                    sx={{
+                      "& > :not(style)": { m: 1, width: "15ch" },
+                    }}
+                    noValidate
+                    autoComplete="off"
+                  >
+                    <Field
+                      component={TextField}
+                      label="おなまえ"
+                      name="username"
+                    />
+                  </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="username" />
+                  </p>
+                </dd>
+              </dl>
+              <dl className={styles.r_list}>
+                <dt>せいべつ</dt>
+                <dd>
+                  <Box>
+                    <Field
+                      label="せいべつ"
+                      type="text"
+                      component={TextField}
+                      select
+                      variant="standard"
+                      sx={{ m: 1, minWidth: 120 }}
+                      margin="normal"
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                    >
+                      {genderSelect.map((option) => (
+                        <MenuItem key={option.value} value={option.value}>
+                          {option.value}
+                        </MenuItem>
+                      ))}
+                    </Field>
+                  </Box>
+                </dd>
+              </dl>
+              <dl className={styles.r_list}>
+                <dt>ちほう</dt>
+                <dd>
+                  <Box>
+                    <Field
+                      label="ちほう"
+                      type="text"
+                      component={TextField}
+                      select
+                      variant="standard"
+                      sx={{ m: 1, minWidth: 120 }}
+                      margin="normal"
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                    >
+                      {countrySelect.map((option) => (
+                        <MenuItem key={option.value} value={option.value}>
+                          {option.value}
+                        </MenuItem>
+                      ))}
+                    </Field>
+                  </Box>
+                </dd>
+              </dl>
+              <dl className={styles.r_list}>
+                <dt>パスワード</dt>
+                <dd>
+                  <Box
+                    component="form"
+                    sx={{
+                      "& > :not(style)": { m: 1, width: "15ch" },
+                    }}
+                    noValidate
+                    autoComplete="off"
+                  >
+                    <Field
+                      component={TextField}
+                      label="パスワード"
+                      name="password"
+                      type="password"
+                    />
+                  </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="password" />
+                  </p>
+                </dd>
+              </dl>
+              <div className={styles.btn_wrap}>
+                <Button
+                  className={styles.btn}
+                  type="submit"
+                  variant="contained"
+                >
+                  送信する
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+        </Form>
+      </Formik>
     </>
   );
 };
