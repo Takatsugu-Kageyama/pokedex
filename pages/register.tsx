@@ -6,80 +6,17 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Button, TextField } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
-//import yup
+//import Yup
 import * as Yup from "yup";
 import Head from "next/head";
+//Import React
 import { FC } from "react";
-
-/*-------------------------------Formik settings----------------------------*/
-
-//The input value type of the form to create:
-interface FormValuesType {
-  username: string;
-  password: string;
-  gender: string;
-  country: string;
-}
-
-//Validation
-const formValidation = Yup.object().shape({
-  username: Yup.string().required("おなまえは必須項目です。"),
-  password: Yup.string().required("パスワードは必須項目です。"),
-  country: Yup.string().required("ちほうの入力は必須です。"),
-  gender: Yup.string().required("せいべつの入力は必須です。"),
-});
-
-//Gender Select values
-const genderSelect = [
-  {
-    value: "おとこ",
-    label: "おとこ",
-  },
-  {
-    value: "おんな",
-    label: "おんな",
-  },
-];
-
-//Country Select values
-const countrySelect = [
-  {
-    value: "カントーちほう",
-    label: "カントーちほう",
-  },
-  {
-    value: "ジョウトちほう",
-    label: "ジョウトちほう",
-  },
-  {
-    value: "ホウエンちほう",
-    label: "ホウエンちほう",
-  },
-  {
-    value: "シンオウちほう",
-    label: "シンオウちほう",
-  },
-  {
-    value: "ヒスイちほう",
-    label: "ヒスイちほう",
-  },
-  {
-    value: "イッシュちほう",
-    label: "イッシュちほう",
-  },
-  {
-    value: "カロスちほう",
-    label: "カロスちほう",
-  },
-  {
-    value: "アローラちほう",
-    label: "アローラちほう",
-  },
-  {
-    value: "ガラルちほう",
-    label: "ガラルちほう",
-  },
-];
+//Import From Value and TypeSchema
+import { FormValuesType } from "../util/formSchema";
+import { countrySelect, genderSelect } from "../util/formValue";
+import { formValidation } from "../util/formValidation";
+//Import Firebase
+import { pushUser } from "../util/firebase";
 
 /*-----------------------------Register component--------------------------*/
 const Register: FC = () => {
@@ -89,11 +26,22 @@ const Register: FC = () => {
         <title>かわいいポケモン図鑑 | とうろくがめん</title>
       </Head>
       <Formik
-        initialValues={{ username: "", password: "", gender: "", country: "" }}
+        initialValues={{
+          username: "",
+          password: "",
+          gender: "",
+          country: "",
+        }}
         validationSchema={formValidation}
         onSubmit={(values: FormValuesType, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+            console.log(values.username);
+            pushUser(
+              values.username,
+              values.gender,
+              values.country,
+              values.password
+            );
             setSubmitting(false);
           }, 400);
         }}

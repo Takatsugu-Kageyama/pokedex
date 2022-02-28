@@ -1,6 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp, FirebaseApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getDatabase, ref, push, set } from "firebase/database";
+import { FormValuesType } from "./formSchema";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,4 +21,19 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const db = getDatabase();
+const postListRef = ref(db, "users");
+
+export const pushUser = (
+  username: string,
+  gender: string,
+  country: string,
+  password: string
+) => {
+  push(postListRef, {
+    username,
+    gender,
+    country,
+    password,
+  });
+};
