@@ -1,20 +1,15 @@
 // import style sheet
 import styles from "../styles/register.module.scss";
-//import state
-import { useEffect, useState } from "react";
 // import Formik
-import { Formik, Form, Field, FormikHelpers, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 // import Material UI
 import { Button, TextField } from "@mui/material";
-import Menu, { MenuProps } from "@mui/material/Menu";
-import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Box from "@mui/material/Box";
 //import yup
 import * as Yup from "yup";
 import Head from "next/head";
-import Box from "@mui/material/Box";
+import { FC } from "react";
 
 /*-------------------------------Formik settings----------------------------*/
 
@@ -22,17 +17,14 @@ import Box from "@mui/material/Box";
 interface FormValuesType {
   username: string;
   password: string;
+  gender: string;
+  country: string;
 }
 
 //Validation
 const formValidation = Yup.object().shape({
   username: Yup.string().required("おなまえは必須項目です。"),
-  password: Yup.string()
-    .required("パスワードは必須項目です。")
-    .matches(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
-      "大文字と小文字、数字を含めた８文字のパスワードで設定してください。"
-    ),
+  password: Yup.string().required("パスワードは必須項目です。"),
 });
 
 //Gender Select values
@@ -88,26 +80,23 @@ const countrySelect = [
 ];
 
 /*-----------------------------Register component--------------------------*/
-const Register = () => {
+const Register: FC = () => {
   return (
     <>
       <Head>
         <title>かわいいポケモン図鑑 | とうろくがめん</title>
       </Head>
       <Formik
-        initialValues={{
-          username: "",
-          password: "",
-        }}
-        validationSchema={formValidation}
-        onSubmit={(
-          values: FormValuesType,
-          { setSubmitting }: FormikHelpers<FormValuesType>
-        ) => {
+        initialValues={{ username: "", password: "", gender: "", country: "" }}
+        validationSchema={Yup.object({
+          username: Yup.string().required("おなまえの入力は必須です。"),
+          password: Yup.string().required("パスワードの入力は必須です。"),
+        })}
+        onSubmit={(values: FormValuesType, { setSubmitting }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
-          }, 500);
+          }, 400);
         }}
       >
         <Form>
@@ -118,22 +107,17 @@ const Register = () => {
                 <dt>おなまえ</dt>
                 <dd>
                   <Box
-                    component="form"
                     sx={{
                       "& > :not(style)": { m: 1, width: "15ch" },
                     }}
-                    noValidate
-                    autoComplete="off"
                   >
                     <Field
-                      component={TextField}
+                      as={TextField}
                       label="おなまえ"
                       name="username"
+                      type="text"
                     />
                   </Box>
-                  <p className={styles.error_text}>
-                    <ErrorMessage name="username" />
-                  </p>
                 </dd>
               </dl>
               <dl className={styles.r_list}>
@@ -141,9 +125,10 @@ const Register = () => {
                 <dd>
                   <Box>
                     <Field
+                      as={TextField}
                       label="せいべつ"
                       type="text"
-                      component={TextField}
+                      name="gender"
                       select
                       variant="standard"
                       sx={{ m: 1, minWidth: 120 }}
@@ -166,9 +151,10 @@ const Register = () => {
                 <dd>
                   <Box>
                     <Field
+                      as={TextField}
                       label="ちほう"
                       type="text"
-                      component={TextField}
+                      name="country"
                       select
                       variant="standard"
                       sx={{ m: 1, minWidth: 120 }}
@@ -190,23 +176,17 @@ const Register = () => {
                 <dt>パスワード</dt>
                 <dd>
                   <Box
-                    component="form"
                     sx={{
                       "& > :not(style)": { m: 1, width: "15ch" },
                     }}
-                    noValidate
-                    autoComplete="off"
                   >
                     <Field
-                      component={TextField}
+                      as={TextField}
                       label="パスワード"
                       name="password"
                       type="password"
                     />
                   </Box>
-                  <p className={styles.error_text}>
-                    <ErrorMessage name="password" />
-                  </p>
                 </dd>
               </dl>
               <div className={styles.btn_wrap}>

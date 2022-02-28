@@ -68,7 +68,7 @@ class PokedexNonUser extends React.Component {
   handleClick = (pokemonName: string) => {
     const { allPokemons } = this.state;
 
-    //Find the seected pokemon from all pokemons
+    //Find the selected pokemon from all pokemons
     const selectedPokemon = allPokemons.find(
       (pokemon: PokemonSchema) => pokemon.name === pokemonName
     );
