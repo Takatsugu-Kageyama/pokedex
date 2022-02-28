@@ -1,7 +1,7 @@
 // import style sheet
 import styles from "../styles/register.module.scss";
 // import Formik
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 // import Material UI
 import { Button, TextField } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
@@ -25,6 +25,8 @@ interface FormValuesType {
 const formValidation = Yup.object().shape({
   username: Yup.string().required("おなまえは必須項目です。"),
   password: Yup.string().required("パスワードは必須項目です。"),
+  country: Yup.string().required("ちほうの入力は必須です。"),
+  gender: Yup.string().required("せいべつの入力は必須です。"),
 });
 
 //Gender Select values
@@ -88,10 +90,7 @@ const Register: FC = () => {
       </Head>
       <Formik
         initialValues={{ username: "", password: "", gender: "", country: "" }}
-        validationSchema={Yup.object({
-          username: Yup.string().required("おなまえの入力は必須です。"),
-          password: Yup.string().required("パスワードの入力は必須です。"),
-        })}
+        validationSchema={formValidation}
         onSubmit={(values: FormValuesType, { setSubmitting }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
@@ -118,6 +117,9 @@ const Register: FC = () => {
                       type="text"
                     />
                   </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="username" />
+                  </p>
                 </dd>
               </dl>
               <dl className={styles.r_list}>
@@ -131,7 +133,7 @@ const Register: FC = () => {
                       name="gender"
                       select
                       variant="standard"
-                      sx={{ m: 1, minWidth: 120 }}
+                      sx={{ m: 1, width: "15ch" }}
                       margin="normal"
                       InputLabelProps={{
                         shrink: true,
@@ -144,6 +146,9 @@ const Register: FC = () => {
                       ))}
                     </Field>
                   </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="gender" />
+                  </p>
                 </dd>
               </dl>
               <dl className={styles.r_list}>
@@ -157,7 +162,7 @@ const Register: FC = () => {
                       name="country"
                       select
                       variant="standard"
-                      sx={{ m: 1, minWidth: 120 }}
+                      sx={{ m: 1, width: "15ch" }}
                       margin="normal"
                       InputLabelProps={{
                         shrink: true,
@@ -170,6 +175,9 @@ const Register: FC = () => {
                       ))}
                     </Field>
                   </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="country" />
+                  </p>
                 </dd>
               </dl>
               <dl className={styles.r_list}>
@@ -187,6 +195,9 @@ const Register: FC = () => {
                       type="password"
                     />
                   </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="password" />
+                  </p>
                 </dd>
               </dl>
               <div className={styles.btn_wrap}>
