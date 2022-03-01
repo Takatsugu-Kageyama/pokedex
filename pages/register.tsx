@@ -17,26 +17,30 @@ import { countrySelect, genderSelect } from "../util/formValue";
 import { formValidation } from "../util/formValidation";
 //Import Firebase
 import { pushUser } from "../util/firebase";
+import { Router, useRouter } from "next/router";
 
 /*-----------------------------Register component--------------------------*/
 const Register: FC = () => {
+  const router = useRouter();
   return (
     <>
       <Head>
         <title>かわいいポケモン図鑑 | とうろくがめん</title>
       </Head>
       <Formik
+        //Initial form value
         initialValues={{
           username: "",
           password: "",
           gender: "",
           country: "",
         }}
-        validationSchema={formValidation}
+        validationSchema={formValidation} //validation
+        //When button is clicked
         onSubmit={(values: FormValuesType, { setSubmitting }) => {
           setTimeout(() => {
-            console.log(values.username);
             pushUser(values);
+            router.push("/pokedexUserPage");
             setSubmitting(false);
           }, 400);
         }}

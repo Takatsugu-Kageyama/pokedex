@@ -15,9 +15,6 @@ const Navbar = () => {
             <li>
               <Link href="/">マイページ</Link>
             </li>
-            <li>
-              <Link href="/">人気のポケモン</Link>
-            </li>
           </ul>
         </div>
       </div>
