@@ -1,7 +1,10 @@
 import styles from "../styles/navbar.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
+  const currentPath = router.pathname.toString();
   return (
     <div className={styles.nav_wrapper}>
       <div className={styles.nav_container}>
@@ -13,7 +16,11 @@ const Navbar = () => {
         <div className={styles.nav_menu}>
           <ul className={styles.ul}>
             <li>
-              <Link href="/">マイページ</Link>
+              {currentPath === "/" ||
+              currentPath === "/register" ||
+              currentPath === "/pokedexNonUser" ? null : (
+                <Link href="/">マイページ</Link>
+              )}
             </li>
           </ul>
         </div>
