@@ -19,7 +19,7 @@ const Navbar = () => {
               {currentPath === "/" ||
               currentPath === "/register" ||
               currentPath === "/pokedexNonUser" ? null : (
-                <Link href="/">マイページ</Link>
+                <Link href="/myPage">マイページ</Link>
               )}
             </li>
           </ul>

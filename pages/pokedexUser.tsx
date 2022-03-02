@@ -15,7 +15,7 @@ interface AppState {
   selectedPokemon: PokemonSchema | undefined;
 }
 
-class PokedexUserPage extends React.Component {
+class PokedexUser extends React.Component {
   state = {
     searchField: "",
     allPokemons: [],
@@ -95,4 +95,4 @@ class PokedexUserPage extends React.Component {
   }
 }
 
-export default PokedexUserPage;
+export default PokedexUser;

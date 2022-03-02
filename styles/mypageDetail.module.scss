@@ -1,0 +1,10 @@
+.detail_container {
+  .d_list {
+    @apply w-[500px] table font-DotGothic16 font-black text-[18px] py-[20px];
+    border-bottom: 2px dashed #000;
+
+    dt {
+      @apply table-cell w-[300px];
+    }
+  }
+}
