@@ -13,7 +13,6 @@ const PokedexUser: NextPage = () => {
   }, [currentUser]);
   return (
     <>
-      <h2>{`The current user is ${currentUser}`}</h2>
       <PokedexMain />
     </>
   );
