@@ -3,100 +3,100 @@ import styles from "../styles/login.module.scss";
 // import Link
 import Link from "next/link";
 // import Formik
-import { useFormik } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 // import Material UI
-import { Button, TextField, ButtonBase } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import Head from "next/head";
+import { LoginFormValidation } from "../util/formValidation";
+import { LoginFormValuesType } from "../util/formSchema";
+import { useRouter } from "next/router";
+import Box from "@mui/material/Box";
+import { signInWithEmailAndPassword } from "@firebase/auth";
+import { auth } from "../util/firebase";
+import { useAuth } from "./context/authContext";
 
 /*-------------------------------Formik settings----------------------------*/
-//The input value type of the form to create:
-type FormValueType = {
-  username: string;
-  password: string | number;
-};
-
-//Sending process:
-const onSubmit = (values: FormValueType) => {
-  alert(JSON.stringify(values, null, 2));
-};
-/**Create error: **/
-
-// Define error type:
-type FormErrorType = {
-  [P in keyof FormValueType]?: string | number;
-};
-
-//validate function:
-const validate = (values: FormValueType): FormErrorType => {
-  const errors: FormErrorType = {};
-  if (!values.username) {
-    errors.username = "おなまえを入力してください。";
-  }
-  if (!values.password) {
-    errors.password = "パスワードを入力してください。";
-  }
-  return errors;
-};
 // Login component:
 const Login = () => {
-  // Define form:
-  const formik = useFormik<FormValueType>({
-    initialValues: { username: "", password: "" }, // First interface values
-    validate: validate, //validation
-    onSubmit: onSubmit, //onSubmit Function
-  });
+  const router = useRouter();
   return (
     <>
       <Head>
         <title>なつかしいポケモン図鑑</title>
       </Head>
       <div className={styles.overall}>
-        <form onSubmit={formik.handleSubmit}>
-          <div className={styles.form_wrap}>
-            <div className={styles.form_container}>
-              <h2 className={styles.head}>ログイン</h2>
-              <div className={styles.input_area}>
-                <TextField
-                  onChange={formik.handleChange} // Get the input value. just like e.target.value
-                  value={formik.values.username} // value name
-                  className={styles.input}
-                  name="username"
-                  id="outlined-basic"
-                  label="なまえ"
-                  variant="outlined"
-                />
-                {formik.errors.username ? (
-                  <p className={styles.error_text}>{formik.errors.username}</p>
-                ) : null}
+        <Formik
+          //Initial form value
+          initialValues={{
+            email: "",
+            password: "",
+          }}
+          validationSchema={LoginFormValidation} //validation
+          //When button is clicked
+          onSubmit={async (values: LoginFormValuesType, { setSubmitting }) => {
+            await signInWithEmailAndPassword(
+              auth,
+              values.email,
+              values.password
+            )
+              .then((response) => {
+                router.push("/pokedexUser");
+              })
+              .catch((error) => alert(error.message));
+            setTimeout(() => {
+              setSubmitting(false);
+            }, 400);
+          }}
+        >
+          <Form>
+            <div className={styles.form_wrap}>
+              <div className={styles.form_container}>
+                <h2 className={styles.head}>ログイン</h2>
+                <div className={styles.input_area}>
+                  <Box
+                    sx={{
+                      "& > :not(style)": { m: 1, width: "25ch" },
+                    }}
+                  >
+                    <Field
+                      as={TextField}
+                      label="pokedex@pika.com"
+                      name="email"
+                      type="text"
+                    />
+                  </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="email" />
+                  </p>
+                </div>
+                <div className={styles.input_area}>
+                  <Box
+                    sx={{
+                      "& > :not(style)": { m: 1, width: "25ch" },
+                    }}
+                  >
+                    <Field
+                      as={TextField}
+                      label="パスワード"
+                      name="password"
+                      type="password"
+                    />
+                  </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="password" />
+                  </p>
+                </div>
+                <Button
+                  className={styles.btn}
+                  type="submit"
+                  variant="contained"
+                >
+                  送信する
+                </Button>
               </div>
-              <div className={styles.input_area}>
-                <TextField
-                  onChange={formik.handleChange} //Get input value
-                  value={formik.values.password} // value name
-                  className={styles.input}
-                  name="password"
-                  type="password"
-                  id="outlined-basic"
-                  label="パスワード"
-                  variant="outlined"
-                />
-                {formik.errors.password ? (
-                  <p className={styles.error_text}>{formik.errors.password}</p>
-                ) : null}
-              </div>
-              <Button
-                onSubmit={() => {
-                  formik.handleSubmit();
-                }}
-                className={styles.btn}
-                type="submit"
-                variant="contained"
-              >
-                送信する
-              </Button>
             </div>
-          </div>
-        </form>
+          </Form>
+        </Formik>
         <div className={styles.ano_btn}>
           <div className={styles.n_log_btn}>
             <Link href="/register">はじめてのログイン</Link>

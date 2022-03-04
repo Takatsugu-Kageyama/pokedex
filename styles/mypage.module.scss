@@ -1,3 +1,13 @@
 .overall {
-  @apply w-[80%] pt-[120px] mx-auto h-[100vh] flex flex-row flex-wrap justify-between;
+  @apply w-[80%] pt-[120px] mx-auto h-[100vh] ;
+  .page_container {
+    @apply flex flex-row flex-wrap justify-between;
+    .btn_wrap {
+      @apply w-[300px] pt-[30px] flex flex-wrap justify-around mx-auto;
+      .btn {
+        @apply font-DotGothic16 font-black bg-gray-400 text-black;
+      }
+    }
+  }
+
 }

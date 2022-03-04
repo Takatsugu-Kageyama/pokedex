@@ -1,6 +1,10 @@
 import * as Yup from "yup";
 
-export const formValidation = Yup.object().shape({
+export const RegisterFormValidation = Yup.object().shape({
+  //email validation
+  email: Yup.string()
+    .required("メールアドレスを入力してください。")
+    .email("メースアドレスが不正です。"),
   //username validation
   username: Yup.string()
     .required("おなまえは必須項目です。")
@@ -16,4 +20,13 @@ export const formValidation = Yup.object().shape({
   country: Yup.string().required("ちほうの入力は必須です。"),
   //gender validation
   gender: Yup.string().required("せいべつの入力は必須です。"),
+});
+
+export const LoginFormValidation = Yup.object().shape({
+  email: Yup.string()
+    .required("メールアドレスを入力してください。")
+    .email("メースアドレスが不正です。"),
+
+  //password validation
+  password: Yup.string().required("パスワードを入力してください。"),
 });

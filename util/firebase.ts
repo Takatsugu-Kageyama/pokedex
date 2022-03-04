@@ -1,15 +1,30 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp, FirebaseApp } from "firebase/app";
+import {
+  initializeApp,
+  FirebaseApp,
+  getApps,
+  getApp,
+  FirebaseOptions,
+} from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getDatabase, ref, push, set } from "firebase/database";
-import { FormValuesType } from "./formSchema";
+import { getDatabase, ref, push, set, query } from "firebase/database";
+import {
+  Firestore,
+  collection,
+  doc,
+  getFirestore,
+  onSnapshot,
+  setDoc,
+} from "@firebase/firestore";
+import { router } from "next/client";
+import { Auth, getAuth } from "@firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+const firebaseConfig: FirebaseOptions = {
   apiKey: "AIzaSyA9yLgHhO2o4PeRubve6suAJcSmhXe4Dow",
   authDomain: "pokedex-a08fd.firebaseapp.com",
   projectId: "pokedex-a08fd",
@@ -20,20 +35,34 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getDatabase();
-const postListRef = ref(db, "users");
+export const firebase: FirebaseApp = !getApps().length
+  ? initializeApp(firebaseConfig)
+  : getApp();
 
-export const pushUser = ({
-  username,
-  gender,
-  country,
-  password,
-}: FormValuesType) => {
-  push(postListRef, {
-    username,
-    gender,
-    country,
-    password,
+//Write Data
+export const SendData = () => {
+  try {
+    const db = getFirestore(firebase); //Initialize Firestore instance.
+    const docRef = doc(collection(db, "userData")); //Creation of documents with random IDs in userData.
+    //store data
+    const data = {
+      name: "たかつぐ",
+      gender: "おとこ",
+      country: "カントーちほう",
+    };
+    setDoc(docRef, data).then((r) => alert("good!"));
+  } catch (error) {
+    // nothing
+  }
+};
+
+//Read Data
+export const GetData = () => {
+  const db = getFirestore(firebase); //Initialize Firestore instance.
+  const docRef = doc(db, "userData", "AgSJllYVsFJBejF4C5ZD"); //Creation of documents with random IDs in userData.
+  const unsub = onSnapshot(docRef, (doc) => {
+    console.log("Current data: ", doc.data());
   });
 };
+//Authentication
+export const auth = getAuth(firebase);

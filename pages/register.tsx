@@ -6,22 +6,20 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Button, TextField } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
-//import Yup
-import * as Yup from "yup";
 import Head from "next/head";
 //Import React
-import { FC } from "react";
+import { FC, useContext, useEffect } from "react";
 //Import From Value and TypeSchema
-import { FormValuesType } from "../util/formSchema";
+import { RegisterFormValuesType } from "../util/formSchema";
 import { countrySelect, genderSelect } from "../util/formValue";
-import { formValidation } from "../util/formValidation";
+import { RegisterFormValidation } from "../util/formValidation";
+import { useAuth } from "../components/context/authContext";
+import { auth } from "../util/firebase";
+import { createUserWithEmailAndPassword } from "@firebase/auth";
 //Import Firebase
-import { pushUser } from "../util/firebase";
-import { Router, useRouter } from "next/router";
 
 /*-----------------------------Register component--------------------------*/
 const Register: FC = () => {
-  const router = useRouter();
   return (
     <>
       <Head>
@@ -30,17 +28,21 @@ const Register: FC = () => {
       <Formik
         //Initial form value
         initialValues={{
+          email: "",
           username: "",
           password: "",
           gender: "",
           country: "",
         }}
-        validationSchema={formValidation} //validation
+        validationSchema={RegisterFormValidation} //validation
         //When button is clicked
-        onSubmit={(values: FormValuesType, { setSubmitting }) => {
+        onSubmit={async (values: RegisterFormValuesType, { setSubmitting }) => {
+          await createUserWithEmailAndPassword(
+            auth,
+            values.email,
+            values.password
+          ).catch((error) => alert(error.message));
           setTimeout(() => {
-            pushUser(values);
-            router.push("/pokedexUserPage");
             setSubmitting(false);
           }, 400);
         }}
@@ -49,6 +51,26 @@ const Register: FC = () => {
           <div className={styles.form_wrap}>
             <h2>登録画面</h2>
             <div className={styles.from_container}>
+              <dl className={styles.r_list}>
+                <dt>メールアドレス</dt>
+                <dd>
+                  <Box
+                    sx={{
+                      "& > :not(style)": { m: 1, width: "15ch" },
+                    }}
+                  >
+                    <Field
+                      as={TextField}
+                      label="pokedex@pika.com"
+                      name="email"
+                      type="text"
+                    />
+                  </Box>
+                  <p className={styles.error_text}>
+                    <ErrorMessage name="email" />
+                  </p>
+                </dd>
+              </dl>
               <dl className={styles.r_list}>
                 <dt>おなまえ</dt>
                 <dd>
