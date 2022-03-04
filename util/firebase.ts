@@ -7,7 +7,6 @@ import {
   FirebaseOptions,
 } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getDatabase, ref, push, set, query } from "firebase/database";
 import {
   Firestore,
   collection,
@@ -15,9 +14,13 @@ import {
   getFirestore,
   onSnapshot,
   setDoc,
+  getDocs,
+  getDoc,
 } from "@firebase/firestore";
 import { router } from "next/client";
 import { Auth, getAuth } from "@firebase/auth";
+import { getStorage, ref } from "@firebase/storage";
+import exp from "constants";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -40,29 +43,39 @@ export const firebase: FirebaseApp = !getApps().length
   : getApp();
 
 //Write Data
-export const SendData = () => {
+export const SendData = (
+  userId: string,
+  userName: string,
+  userGender: string,
+  userCountry: string
+) => {
   try {
     const db = getFirestore(firebase); //Initialize Firestore instance.
-    const docRef = doc(collection(db, "userData")); //Creation of documents with random IDs in userData.
+    const docRef = doc(collection(db, "userData"), userId); //Creation of documents with random IDs in userData.
     //store data
     const data = {
-      name: "たかつぐ",
-      gender: "おとこ",
-      country: "カントーちほう",
+      name: userName,
+      gender: userGender,
+      country: userCountry,
     };
-    setDoc(docRef, data).then((r) => alert("good!"));
+    setDoc(docRef, data).then((r) =>
+      alert("登録が完了しました！ポケモン図鑑をお楽しみください！")
+    );
   } catch (error) {
     // nothing
   }
 };
 
-//Read Data
-export const GetData = () => {
-  const db = getFirestore(firebase); //Initialize Firestore instance.
-  const docRef = doc(db, "userData", "AgSJllYVsFJBejF4C5ZD"); //Creation of documents with random IDs in userData.
-  const unsub = onSnapshot(docRef, (doc) => {
-    console.log("Current data: ", doc.data());
-  });
-};
+//Get Data
+/*
+export async function UserInfo(userId: any) {
+  const db = getFirestore(firebase);
+  const userInfoRef = doc(db, "userData", `${userId}`);
+  const user = await getDoc(userInfoRef);
+  const userDetail = user.data();
+  console.log(user.data());
+}
+ */
+
 //Authentication
 export const auth = getAuth(firebase);

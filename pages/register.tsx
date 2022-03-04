@@ -14,12 +14,15 @@ import { RegisterFormValuesType } from "../util/formSchema";
 import { countrySelect, genderSelect } from "../util/formValue";
 import { RegisterFormValidation } from "../util/formValidation";
 import { useAuth } from "../components/context/authContext";
-import { auth } from "../util/firebase";
+import { auth, SendData } from "../util/firebase";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
+import { router } from "next/client";
+import { useRouter } from "next/router";
 //Import Firebase
 
 /*-----------------------------Register component--------------------------*/
 const Register: FC = () => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -41,7 +44,19 @@ const Register: FC = () => {
             auth,
             values.email,
             values.password
-          ).catch((error) => alert(error.message));
+          )
+            .then((cred) => {
+              return SendData(
+                cred.user.uid,
+                values.username,
+                values.gender,
+                values.country
+              );
+            })
+            .then((r) => {
+              return router.push("/pokedexUser");
+            })
+            .catch((error) => alert(error.message));
           setTimeout(() => {
             setSubmitting(false);
           }, 400);

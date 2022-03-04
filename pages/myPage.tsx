@@ -3,14 +3,17 @@ import MyPageImage from "../components/myPageImage";
 import MyPageDedail from "../components/myPageDedail";
 import { useAuth } from "../components/context/authContext";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import { signOut } from "@firebase/auth";
-import { auth } from "../util/firebase";
+import { auth, firebase } from "../util/firebase";
+import { doc, getDoc, getFirestore } from "@firebase/firestore";
+import { userInfo } from "os";
 
 const MyPage = () => {
   const { currentUser } = useAuth();
+  //UserInfo(currentUser);
   const router = useRouter();
   //Redirect to user page if login information is available
   useEffect(() => {
