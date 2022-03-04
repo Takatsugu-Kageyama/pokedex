@@ -1,16 +1,17 @@
 import styles from "../styles/mypageDetail.module.scss";
 import { useAuth } from "./context/authContext";
 import { doc, getDoc, getFirestore } from "@firebase/firestore";
-import { firebase } from "../util/firebase";
+import { auth, firebase } from "../util/firebase";
 import { useEffect, useState } from "react";
 
 const MyPageDedail = () => {
-  const { currentUser } = useAuth();
+  const user = auth.currentUser;
+  const userId = user?.uid;
   const [userInfo, setUserInfo] = useState<any>([]);
   useEffect(() => {
     (async () => {
       const db = getFirestore(firebase);
-      const userInfoRef = doc(db, "userData", `${currentUser}`);
+      const userInfoRef = doc(db, "userData", `${userId}`);
       const user = await getDoc(userInfoRef);
       const userDetail = user.data();
       setUserInfo(userDetail);
