@@ -1174,7 +1174,7 @@ export const pokemonData = [
     base_experience: "172",
     order: "144",
     is_default: "1",
-    name: "electrode",
+    name: "マルマイン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/electrode.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/electrode.gif"}',
   },
@@ -1186,7 +1186,7 @@ export const pokemonData = [
     base_experience: "65",
     order: "145",
     is_default: "1",
-    name: "exeggcute",
+    name: "タマタマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/exeggcute.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/exeggcute.gif"}',
   },
@@ -1198,7 +1198,7 @@ export const pokemonData = [
     base_experience: "186",
     order: "146",
     is_default: "1",
-    name: "exeggutor",
+    name: "ナッシー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/exeggutor.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/exeggutor.gif"}',
   },
@@ -1210,7 +1210,7 @@ export const pokemonData = [
     base_experience: "64",
     order: "148",
     is_default: "1",
-    name: "cubone",
+    name: "カラカラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/cubone.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/cubone.gif"}',
   },
@@ -1222,7 +1222,7 @@ export const pokemonData = [
     base_experience: "149",
     order: "149",
     is_default: "1",
-    name: "marowak",
+    name: "ガラガラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/marowak.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/marowak.gif"}',
   },
@@ -1234,7 +1234,7 @@ export const pokemonData = [
     base_experience: "159",
     order: "153",
     is_default: "1",
-    name: "hitmonlee",
+    name: "サワムラー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/hitmonlee.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/hitmonlee.gif"}',
   },
@@ -1246,7 +1246,7 @@ export const pokemonData = [
     base_experience: "159",
     order: "154",
     is_default: "1",
-    name: "hitmonchan",
+    name: "エビワラー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/hitmonchan.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/hitmonchan.gif"}',
   },
@@ -1258,7 +1258,7 @@ export const pokemonData = [
     base_experience: "77",
     order: "156",
     is_default: "1",
-    name: "lickitung",
+    name: "ベロリンガ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/lickitung.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/lickitung.gif"}',
   },
@@ -1270,7 +1270,7 @@ export const pokemonData = [
     base_experience: "68",
     order: "158",
     is_default: "1",
-    name: "koffing",
+    name: "ドガース",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/koffing.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/koffing.gif"}',
   },
@@ -1282,7 +1282,7 @@ export const pokemonData = [
     base_experience: "172",
     order: "159",
     is_default: "1",
-    name: "weezing",
+    name: "マタドガス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/weezing.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/weezing.gif"}',
   },
@@ -1294,7 +1294,7 @@ export const pokemonData = [
     base_experience: "69",
     order: "160",
     is_default: "1",
-    name: "rhyhorn",
+    name: "サイホーン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/rhyhorn.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/rhyhorn.gif"}',
   },
@@ -1306,7 +1306,7 @@ export const pokemonData = [
     base_experience: "170",
     order: "161",
     is_default: "1",
-    name: "rhydon",
+    name: "サイドン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/rhydon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/rhydon.gif"}',
   },
@@ -1318,7 +1318,7 @@ export const pokemonData = [
     base_experience: "395",
     order: "164",
     is_default: "1",
-    name: "chansey",
+    name: "ラッキー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/chansey.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/chansey.gif"}',
   },
@@ -1330,7 +1330,7 @@ export const pokemonData = [
     base_experience: "87",
     order: "166",
     is_default: "1",
-    name: "tangela",
+    name: "モンジャラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/tangela.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/tangela.gif"}',
   },
@@ -1342,7 +1342,7 @@ export const pokemonData = [
     base_experience: "172",
     order: "168",
     is_default: "1",
-    name: "kangaskhan",
+    name: "ガルーラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/kangaskhan.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/kangaskhan.gif"}',
   },
@@ -1354,7 +1354,7 @@ export const pokemonData = [
     base_experience: "59",
     order: "170",
     is_default: "1",
-    name: "horsea",
+    name: "タッツー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/horsea.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/horsea.gif"}',
   },
@@ -1366,7 +1366,7 @@ export const pokemonData = [
     base_experience: "154",
     order: "171",
     is_default: "1",
-    name: "seadra",
+    name: "シードラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/seadra.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/seadra.gif"}',
   },
@@ -1378,7 +1378,7 @@ export const pokemonData = [
     base_experience: "64",
     order: "173",
     is_default: "1",
-    name: "goldeen",
+    name: "トサキント",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/goldeen.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/goldeen.gif"}',
   },
@@ -1390,7 +1390,7 @@ export const pokemonData = [
     base_experience: "158",
     order: "174",
     is_default: "1",
-    name: "seaking",
+    name: "アズマオウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/seaking.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/seaking.gif"}',
   },
@@ -1402,7 +1402,7 @@ export const pokemonData = [
     base_experience: "68",
     order: "175",
     is_default: "1",
-    name: "staryu",
+    name: "ヒトデマン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/staryu.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/staryu.gif"}',
   },
@@ -1414,7 +1414,7 @@ export const pokemonData = [
     base_experience: "182",
     order: "176",
     is_default: "1",
-    name: "starmie",
+    name: "スターミー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/starmie.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/starmie.gif"}',
   },
@@ -1427,7 +1427,7 @@ export const pokemonData = [
     base_experience: "100",
     order: "179",
     is_default: "1",
-    name: "scyther",
+    name: "ストライク",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/scyther.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/scyther.gif"}',
   },
@@ -1439,7 +1439,7 @@ export const pokemonData = [
     base_experience: "159",
     order: "183",
     is_default: "1",
-    name: "jynx",
+    name: "ルージュラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/jynx.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/jynx.gif"}',
   },
@@ -1451,7 +1451,7 @@ export const pokemonData = [
     base_experience: "172",
     order: "185",
     is_default: "1",
-    name: "electabuzz",
+    name: "エレブー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/electabuzz.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/electabuzz.gif"}',
   },
@@ -1463,7 +1463,7 @@ export const pokemonData = [
     base_experience: "173",
     order: "188",
     is_default: "1",
-    name: "magmar",
+    name: "ブーバー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/magmar.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/magmar.gif"}',
   },
@@ -1475,7 +1475,7 @@ export const pokemonData = [
     base_experience: "175",
     order: "190",
     is_default: "1",
-    name: "pinsir",
+    name: "カイロス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/pinsir.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/pinsir.gif"}',
   },
@@ -1487,7 +1487,7 @@ export const pokemonData = [
     base_experience: "172",
     order: "192",
     is_default: "1",
-    name: "tauros",
+    name: "ケンタロス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/tauros.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/tauros.gif"}',
   },
@@ -1499,7 +1499,7 @@ export const pokemonData = [
     base_experience: "40",
     order: "193",
     is_default: "1",
-    name: "magikarp",
+    name: "コイキング",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/magikarp.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/magikarp.gif"}',
   },
@@ -1511,7 +1511,7 @@ export const pokemonData = [
     base_experience: "189",
     order: "194",
     is_default: "1",
-    name: "gyarados",
+    name: "ギャラドス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/gyarados.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/gyarados.gif"}',
   },
@@ -1523,7 +1523,7 @@ export const pokemonData = [
     base_experience: "187",
     order: "196",
     is_default: "1",
-    name: "lapras",
+    name: "ラプラス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/lapras.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/lapras.gif"}',
   },
@@ -1535,7 +1535,7 @@ export const pokemonData = [
     base_experience: "101",
     order: "197",
     is_default: "1",
-    name: "ditto",
+    name: "メタモン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ditto.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ditto.gif"}',
   },
@@ -1547,7 +1547,7 @@ export const pokemonData = [
     base_experience: "65",
     order: "198",
     is_default: "1",
-    name: "eevee",
+    name: "イーブイ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/eevee.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/eevee.gif"}',
   },
@@ -1559,7 +1559,7 @@ export const pokemonData = [
     base_experience: "184",
     order: "199",
     is_default: "1",
-    name: "vaporeon",
+    name: "シャワーズ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/vaporeon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/vaporeon.gif"}',
   },
@@ -1571,7 +1571,7 @@ export const pokemonData = [
     base_experience: "184",
     order: "200",
     is_default: "1",
-    name: "jolteon",
+    name: "サンダース",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/jolteon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/jolteon.gif"}',
   },
@@ -1583,7 +1583,7 @@ export const pokemonData = [
     base_experience: "184",
     order: "201",
     is_default: "1",
-    name: "flareon",
+    name: "ブースター",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/flareon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/flareon.gif"}',
   },
@@ -1595,7 +1595,7 @@ export const pokemonData = [
     base_experience: "79",
     order: "207",
     is_default: "1",
-    name: "porygon",
+    name: "ポリゴン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/porygon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/porygon.gif"}',
   },
@@ -1607,7 +1607,7 @@ export const pokemonData = [
     base_experience: "71",
     order: "210",
     is_default: "1",
-    name: "omanyte",
+    name: "オムナイト",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/omanyte.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/omanyte.gif"}',
   },
@@ -1619,7 +1619,7 @@ export const pokemonData = [
     base_experience: "173",
     order: "211",
     is_default: "1",
-    name: "omastar",
+    name: "オムスター",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/omastar.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/omastar.gif"}',
   },
@@ -1631,7 +1631,7 @@ export const pokemonData = [
     base_experience: "71",
     order: "212",
     is_default: "1",
-    name: "kabuto",
+    name: "カブト",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/kabuto.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/kabuto.gif"}',
   },
@@ -1643,7 +1643,7 @@ export const pokemonData = [
     base_experience: "173",
     order: "213",
     is_default: "1",
-    name: "kabutops",
+    name: "カブトプス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/kabutops.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/kabutops.gif"}',
   },
@@ -1655,7 +1655,7 @@ export const pokemonData = [
     base_experience: "180",
     order: "214",
     is_default: "1",
-    name: "aerodactyl",
+    name: "プテラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/aerodactyl.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/aerodactyl.gif"}',
   },
@@ -1667,7 +1667,7 @@ export const pokemonData = [
     base_experience: "189",
     order: "217",
     is_default: "1",
-    name: "snorlax",
+    name: "カビゴン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/snorlax.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/snorlax.gif"}',
   },
@@ -1679,7 +1679,7 @@ export const pokemonData = [
     base_experience: "261",
     order: "218",
     is_default: "1",
-    name: "articuno",
+    name: "フリーザ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/articuno.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/articuno.gif"}',
   },
@@ -1691,7 +1691,7 @@ export const pokemonData = [
     base_experience: "261",
     order: "219",
     is_default: "1",
-    name: "zapdos",
+    name: "サンダー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/zapdos.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/zapdos.gif"}',
   },
@@ -1703,7 +1703,7 @@ export const pokemonData = [
     base_experience: "261",
     order: "220",
     is_default: "1",
-    name: "moltres",
+    name: "ファイヤー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/moltres.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/moltres.gif"}',
   },
@@ -1715,7 +1715,7 @@ export const pokemonData = [
     base_experience: "60",
     order: "221",
     is_default: "1",
-    name: "dratini",
+    name: "ミニリュウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/dratini.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/dratini.gif"}',
   },
@@ -1727,7 +1727,7 @@ export const pokemonData = [
     base_experience: "147",
     order: "222",
     is_default: "1",
-    name: "dragonair",
+    name: "ハクリュー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/dragonair.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/dragonair.gif"}',
   },
@@ -1739,7 +1739,7 @@ export const pokemonData = [
     base_experience: "270",
     order: "223",
     is_default: "1",
-    name: "dragonite",
+    name: "カイリュー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/dragonite.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/dragonite.gif"}',
   },
@@ -1751,7 +1751,7 @@ export const pokemonData = [
     base_experience: "306",
     order: "224",
     is_default: "1",
-    name: "mewtwo",
+    name: "ミュウツー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/mewtwo.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif"}',
   },
@@ -1763,7 +1763,7 @@ export const pokemonData = [
     base_experience: "270",
     order: "227",
     is_default: "1",
-    name: "mew",
+    name: "ミュウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/mew.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/mew.gif"}',
   },
@@ -1775,7 +1775,7 @@ export const pokemonData = [
     base_experience: "64",
     order: "228",
     is_default: "1",
-    name: "chikorita",
+    name: "チコリータ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/chikorita.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/chikorita.gif"}',
   },
@@ -1787,7 +1787,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "229",
     is_default: "1",
-    name: "bayleef",
+    name: "ベイリーフ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/bayleef.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/bayleef.gif"}',
   },
@@ -1799,7 +1799,7 @@ export const pokemonData = [
     base_experience: "236",
     order: "230",
     is_default: "1",
-    name: "meganium",
+    name: "メガニウム",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/meganium.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/meganium.gif"}',
   },
@@ -1811,7 +1811,7 @@ export const pokemonData = [
     base_experience: "62",
     order: "231",
     is_default: "1",
-    name: "cyndaquil",
+    name: "ヒノアラシ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/cyndaquil.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/cyndaquil.gif"}',
   },
@@ -1823,7 +1823,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "232",
     is_default: "1",
-    name: "quilava",
+    name: "マグマラシ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/quilava.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/quilava.gif"}',
   },
@@ -1835,7 +1835,7 @@ export const pokemonData = [
     base_experience: "240",
     order: "233",
     is_default: "1",
-    name: "typhlosion",
+    name: "バクフーン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/typhlosion.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/typhlosion.gif"}',
   },
@@ -1847,7 +1847,7 @@ export const pokemonData = [
     base_experience: "63",
     order: "234",
     is_default: "1",
-    name: "totodile",
+    name: "ワニノコ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/totodile.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/totodile.gif"}',
   },
@@ -1859,7 +1859,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "235",
     is_default: "1",
-    name: "croconaw",
+    name: "アリゲイツ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/croconaw.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/croconaw.gif"}',
   },
@@ -1871,7 +1871,7 @@ export const pokemonData = [
     base_experience: "239",
     order: "236",
     is_default: "1",
-    name: "feraligatr",
+    name: "オーダイル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/feraligatr.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/feraligatr.gif"}',
   },
@@ -1883,7 +1883,7 @@ export const pokemonData = [
     base_experience: "43",
     order: "237",
     is_default: "1",
-    name: "sentret",
+    name: "オタチ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/sentret.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/sentret.gif"}',
   },
@@ -1895,7 +1895,7 @@ export const pokemonData = [
     base_experience: "145",
     order: "238",
     is_default: "1",
-    name: "furret",
+    name: "オオタチ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/furret.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/furret.gif"}',
   },
@@ -1907,7 +1907,7 @@ export const pokemonData = [
     base_experience: "52",
     order: "239",
     is_default: "1",
-    name: "hoothoot",
+    name: "ホーホー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/hoothoot.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/hoothoot.gif"}',
   },
@@ -1919,7 +1919,7 @@ export const pokemonData = [
     base_experience: "158",
     order: "240",
     is_default: "1",
-    name: "noctowl",
+    name: "ヨルノズク",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/noctowl.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/noctowl.gif"}',
   },
@@ -1931,7 +1931,7 @@ export const pokemonData = [
     base_experience: "53",
     order: "241",
     is_default: "1",
-    name: "ledyba",
+    name: "レディバ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ledyba.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ledyba.gif"}',
   },
@@ -1943,7 +1943,7 @@ export const pokemonData = [
     base_experience: "137",
     order: "242",
     is_default: "1",
-    name: "ledian",
+    name: "レディアン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ledian.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ledian.gif"}',
   },
@@ -1955,7 +1955,7 @@ export const pokemonData = [
     base_experience: "50",
     order: "243",
     is_default: "1",
-    name: "spinarak",
+    name: "イトマル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/spinarak.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/spinarak.gif"}',
   },
@@ -1967,7 +1967,7 @@ export const pokemonData = [
     base_experience: "140",
     order: "244",
     is_default: "1",
-    name: "ariados",
+    name: "アリアドス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ariados.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ariados.gif"}',
   },
@@ -1979,7 +1979,7 @@ export const pokemonData = [
     base_experience: "241",
     order: "67",
     is_default: "1",
-    name: "crobat",
+    name: "クロバット",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/crobat.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/crobat.gif"}',
   },
@@ -1991,7 +1991,7 @@ export const pokemonData = [
     base_experience: "66",
     order: "245",
     is_default: "1",
-    name: "chinchou",
+    name: "チョンチー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/chinchou.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/chinchou.gif"}',
   },
@@ -2003,7 +2003,7 @@ export const pokemonData = [
     base_experience: "161",
     order: "246",
     is_default: "1",
-    name: "lanturn",
+    name: "ランターン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/lanturn.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/lanturn.gif"}',
   },
@@ -2015,7 +2015,7 @@ export const pokemonData = [
     base_experience: "41",
     order: "34",
     is_default: "1",
-    name: "pichu",
+    name: "ピチュー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/pichu.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/pichu.gif"}',
   },
@@ -2027,7 +2027,7 @@ export const pokemonData = [
     base_experience: "44",
     order: "55",
     is_default: "1",
-    name: "cleffa",
+    name: "ピィ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/cleffa.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/cleffa.gif"}',
   },
@@ -2039,7 +2039,7 @@ export const pokemonData = [
     base_experience: "42",
     order: "62",
     is_default: "1",
-    name: "igglybuff",
+    name: "ププリン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/igglybuff.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/igglybuff.gif"}',
   },
@@ -2051,7 +2051,7 @@ export const pokemonData = [
     base_experience: "49",
     order: "247",
     is_default: "1",
-    name: "togepi",
+    name: "トゲピー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/togepi.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/togepi.gif"}',
   },
@@ -2063,7 +2063,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "248",
     is_default: "1",
-    name: "togetic",
+    name: "トゲチック",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/togetic.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/togetic.gif"}',
   },
@@ -2075,7 +2075,7 @@ export const pokemonData = [
     base_experience: "64",
     order: "250",
     is_default: "1",
-    name: "natu",
+    name: "ネイティ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/natu.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/natu.gif"}',
   },
@@ -2087,7 +2087,7 @@ export const pokemonData = [
     base_experience: "165",
     order: "251",
     is_default: "1",
-    name: "xatu",
+    name: "ネイティオ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/xatu.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/xatu.gif"}',
   },
@@ -2099,7 +2099,7 @@ export const pokemonData = [
     base_experience: "56",
     order: "252",
     is_default: "1",
-    name: "mareep",
+    name: "メリープ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/mareep.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/mareep.gif"}',
   },
@@ -2111,7 +2111,7 @@ export const pokemonData = [
     base_experience: "128",
     order: "253",
     is_default: "1",
-    name: "flaaffy",
+    name: "モココ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/flaaffy.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/flaaffy.gif"}',
   },
@@ -2123,7 +2123,7 @@ export const pokemonData = [
     base_experience: "230",
     order: "254",
     is_default: "1",
-    name: "ampharos",
+    name: "デンリュウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ampharos.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ampharos.gif"}',
   },
@@ -2135,7 +2135,7 @@ export const pokemonData = [
     base_experience: "221",
     order: "71",
     is_default: "1",
-    name: "bellossom",
+    name: "キレイハナ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/bellossom.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/bellossom.gif"}',
   },
@@ -2147,7 +2147,7 @@ export const pokemonData = [
     base_experience: "88",
     order: "257",
     is_default: "1",
-    name: "marill",
+    name: "マリル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/marill.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/marill.gif"}',
   },
@@ -2159,7 +2159,7 @@ export const pokemonData = [
     base_experience: "189",
     order: "258",
     is_default: "1",
-    name: "azumarill",
+    name: "マリルリ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/azumarill.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/azumarill.gif"}',
   },
@@ -2171,7 +2171,7 @@ export const pokemonData = [
     base_experience: "144",
     order: "260",
     is_default: "1",
-    name: "sudowoodo",
+    name: "ウソッキー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/sudowoodo.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/sudowoodo.gif"}',
   },
@@ -2183,7 +2183,7 @@ export const pokemonData = [
     base_experience: "225",
     order: "93",
     is_default: "1",
-    name: "politoed",
+    name: "ニョロトノ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/politoed.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/politoed.gif"}',
   },
@@ -2195,7 +2195,7 @@ export const pokemonData = [
     base_experience: "50",
     order: "261",
     is_default: "1",
-    name: "hoppip",
+    name: "ハネッコ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/hoppip.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/hoppip.gif"}',
   },
@@ -2207,7 +2207,7 @@ export const pokemonData = [
     base_experience: "119",
     order: "262",
     is_default: "1",
-    name: "skiploom",
+    name: "ポポッコ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/skiploom.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/skiploom.gif"}',
   },
@@ -2219,7 +2219,7 @@ export const pokemonData = [
     base_experience: "207",
     order: "263",
     is_default: "1",
-    name: "jumpluff",
+    name: "ワタッコ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/jumpluff.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/jumpluff.gif"}',
   },
@@ -2231,7 +2231,7 @@ export const pokemonData = [
     base_experience: "72",
     order: "264",
     is_default: "1",
-    name: "aipom",
+    name: "エイパム",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/aipom.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/aipom.gif"}',
   },
@@ -2243,7 +2243,7 @@ export const pokemonData = [
     base_experience: "36",
     order: "266",
     is_default: "1",
-    name: "sunkern",
+    name: "ヒマナッツ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/sunkern.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/sunkern.gif"}',
   },
@@ -2255,7 +2255,7 @@ export const pokemonData = [
     base_experience: "149",
     order: "267",
     is_default: "1",
-    name: "sunflora",
+    name: "キマワリ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/sunflora.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/sunflora.gif"}',
   },
@@ -2267,7 +2267,7 @@ export const pokemonData = [
     base_experience: "78",
     order: "268",
     is_default: "1",
-    name: "yanma",
+    name: "ヤンヤンマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/yanma.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/yanma.gif"}',
   },
@@ -2279,7 +2279,7 @@ export const pokemonData = [
     base_experience: "42",
     order: "270",
     is_default: "1",
-    name: "wooper",
+    name: "ウパー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/wooper.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/wooper.gif"}',
   },
@@ -2291,7 +2291,7 @@ export const pokemonData = [
     base_experience: "151",
     order: "271",
     is_default: "1",
-    name: "quagsire",
+    name: "ヌオー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/quagsire.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/quagsire.gif"}',
   },
@@ -2303,7 +2303,7 @@ export const pokemonData = [
     base_experience: "184",
     order: "202",
     is_default: "1",
-    name: "espeon",
+    name: "エーフィ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/espeon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/espeon.gif"}',
   },
@@ -2315,7 +2315,7 @@ export const pokemonData = [
     base_experience: "184",
     order: "203",
     is_default: "1",
-    name: "umbreon",
+    name: "ブラッキー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/umbreon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/umbreon.gif"}',
   },
@@ -2327,7 +2327,7 @@ export const pokemonData = [
     base_experience: "81",
     order: "272",
     is_default: "1",
-    name: "murkrow",
+    name: "ヤミカラス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/murkrow.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/murkrow.gif"}',
   },
@@ -2339,7 +2339,7 @@ export const pokemonData = [
     base_experience: "172",
     order: "117",
     is_default: "1",
-    name: "slowking",
+    name: "ヤドキング",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/slowking.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/slowking.gif"}',
   },
@@ -2351,7 +2351,7 @@ export const pokemonData = [
     base_experience: "87",
     order: "274",
     is_default: "1",
-    name: "misdreavus",
+    name: "ムウマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/misdreavus.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/misdreavus.gif"}',
   },
@@ -2363,7 +2363,7 @@ export const pokemonData = [
     base_experience: "118",
     order: "276",
     is_default: "1",
-    name: "unown",
+    name: "アンノーン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/unown.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/unown.gif"}',
   },
@@ -2375,7 +2375,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "278",
     is_default: "1",
-    name: "wobbuffet",
+    name: "ソーナンス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/wobbuffet.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/wobbuffet.gif"}',
   },
@@ -2387,7 +2387,7 @@ export const pokemonData = [
     base_experience: "159",
     order: "279",
     is_default: "1",
-    name: "girafarig",
+    name: "キリンリキ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/girafarig.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/girafarig.gif"}',
   },
@@ -2399,7 +2399,7 @@ export const pokemonData = [
     base_experience: "58",
     order: "280",
     is_default: "1",
-    name: "pineco",
+    name: "クヌギダマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/pineco.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/pineco.gif"}',
   },
@@ -2411,7 +2411,7 @@ export const pokemonData = [
     base_experience: "163",
     order: "281",
     is_default: "1",
-    name: "forretress",
+    name: "フォレトス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/forretress.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/forretress.gif"}',
   },
@@ -2423,7 +2423,7 @@ export const pokemonData = [
     base_experience: "145",
     order: "282",
     is_default: "1",
-    name: "dunsparce",
+    name: "ノコッチ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/dunsparce.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/dunsparce.gif"}',
   },
@@ -2435,7 +2435,7 @@ export const pokemonData = [
     base_experience: "86",
     order: "283",
     is_default: "1",
-    name: "gligar",
+    name: "グライガー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/gligar.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/gligar.gif"}',
   },
@@ -2447,7 +2447,7 @@ export const pokemonData = [
     base_experience: "179",
     order: "137",
     is_default: "1",
-    name: "steelix",
+    name: "ハガネール",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/steelix.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/steelix.gif"}',
   },
@@ -2459,7 +2459,7 @@ export const pokemonData = [
     base_experience: "60",
     order: "285",
     is_default: "1",
-    name: "snubbull",
+    name: "ブルー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/snubbull.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/snubbull.gif"}',
   },
@@ -2471,7 +2471,7 @@ export const pokemonData = [
     base_experience: "158",
     order: "286",
     is_default: "1",
-    name: "granbull",
+    name: "グランブル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/granbull.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/granbull.gif"}',
   },
@@ -2483,7 +2483,7 @@ export const pokemonData = [
     base_experience: "88",
     order: "287",
     is_default: "1",
-    name: "qwilfish",
+    name: "ハリーセン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/qwilfish.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/qwilfish.gif"}',
   },
@@ -2495,7 +2495,7 @@ export const pokemonData = [
     base_experience: "175",
     order: "180",
     is_default: "1",
-    name: "scizor",
+    name: "ハッサム",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/scizor.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/scizor.gif"}',
   },
@@ -2507,7 +2507,7 @@ export const pokemonData = [
     base_experience: "177",
     order: "288",
     is_default: "1",
-    name: "shuckle",
+    name: "ツボツボ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/shuckle.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/shuckle.gif"}',
   },
@@ -2519,7 +2519,7 @@ export const pokemonData = [
     base_experience: "175",
     order: "289",
     is_default: "1",
-    name: "heracross",
+    name: "ヘラクロス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/heracross.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/heracross.gif"}',
   },
@@ -2531,7 +2531,7 @@ export const pokemonData = [
     base_experience: "86",
     order: "291",
     is_default: "1",
-    name: "sneasel",
+    name: "ニューラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/sneasel.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/sneasel.gif"}',
   },
@@ -2543,7 +2543,7 @@ export const pokemonData = [
     base_experience: "66",
     order: "293",
     is_default: "1",
-    name: "teddiursa",
+    name: "ヒメグマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/teddiursa.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/teddiursa.gif"}',
   },
@@ -2555,7 +2555,7 @@ export const pokemonData = [
     base_experience: "175",
     order: "294",
     is_default: "1",
-    name: "ursaring",
+    name: "リングマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ursaring.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ursaring.gif"}',
   },
@@ -2567,7 +2567,7 @@ export const pokemonData = [
     base_experience: "50",
     order: "295",
     is_default: "1",
-    name: "slugma",
+    name: "マグマッグ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/slugma.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/slugma.gif"}',
   },
@@ -2579,7 +2579,7 @@ export const pokemonData = [
     base_experience: "151",
     order: "296",
     is_default: "1",
-    name: "magcargo",
+    name: "マグカルゴ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/magcargo.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/magcargo.gif"}',
   },
@@ -2591,7 +2591,7 @@ export const pokemonData = [
     base_experience: "50",
     order: "297",
     is_default: "1",
-    name: "swinub",
+    name: "ウリムー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/swinub.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/swinub.gif"}',
   },
@@ -2603,7 +2603,7 @@ export const pokemonData = [
     base_experience: "158",
     order: "298",
     is_default: "1",
-    name: "piloswine",
+    name: "イノムー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/piloswine.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/piloswine.gif"}',
   },
@@ -2615,7 +2615,7 @@ export const pokemonData = [
     base_experience: "144",
     order: "300",
     is_default: "1",
-    name: "corsola",
+    name: "サニーゴ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/corsola.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/corsola.gif"}',
   },
@@ -2627,7 +2627,7 @@ export const pokemonData = [
     base_experience: "60",
     order: "301",
     is_default: "1",
-    name: "remoraid",
+    name: "テッポウオ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/remoraid.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/remoraid.gif"}',
   },
@@ -2639,7 +2639,7 @@ export const pokemonData = [
     base_experience: "168",
     order: "302",
     is_default: "1",
-    name: "octillery",
+    name: "オクタン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/octillery.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/octillery.gif"}',
   },
@@ -2651,7 +2651,7 @@ export const pokemonData = [
     base_experience: "116",
     order: "303",
     is_default: "1",
-    name: "delibird",
+    name: "デリバード",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/delibird.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/delibird.gif"}',
   },
@@ -2663,7 +2663,7 @@ export const pokemonData = [
     base_experience: "170",
     order: "305",
     is_default: "1",
-    name: "mantine",
+    name: "マンタイン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/mantine.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/mantine.gif"}',
   },
@@ -2675,7 +2675,7 @@ export const pokemonData = [
     base_experience: "163",
     order: "306",
     is_default: "1",
-    name: "skarmory",
+    name: "エアームド",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/skarmory.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/skarmory.gif"}',
   },
@@ -2687,7 +2687,7 @@ export const pokemonData = [
     base_experience: "66",
     order: "307",
     is_default: "1",
-    name: "houndour",
+    name: "デルビル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/houndour.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/houndour.gif"}',
   },
@@ -2699,7 +2699,7 @@ export const pokemonData = [
     base_experience: "175",
     order: "308",
     is_default: "1",
-    name: "houndoom",
+    name: "ヘルガー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/houndoom.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/houndoom.gif"}',
   },
@@ -2711,7 +2711,7 @@ export const pokemonData = [
     base_experience: "243",
     order: "172",
     is_default: "1",
-    name: "kingdra",
+    name: "キングドラ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/kingdra.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/kingdra.gif"}',
   },
@@ -2723,7 +2723,7 @@ export const pokemonData = [
     base_experience: "66",
     order: "310",
     is_default: "1",
-    name: "phanpy",
+    name: "ゴマゾウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/phanpy.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/phanpy.gif"}',
   },
@@ -2735,7 +2735,7 @@ export const pokemonData = [
     base_experience: "175",
     order: "311",
     is_default: "1",
-    name: "donphan",
+    name: "ドンファン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/donphan.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/donphan.gif"}',
   },
@@ -2747,7 +2747,7 @@ export const pokemonData = [
     base_experience: "180",
     order: "208",
     is_default: "1",
-    name: "porygon2",
+    name: "ポリゴン２",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/porygon2.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/porygon2.gif"}',
   },
@@ -2759,7 +2759,7 @@ export const pokemonData = [
     base_experience: "163",
     order: "312",
     is_default: "1",
-    name: "stantler",
+    name: "オドシシ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/stantler.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/stantler.gif"}',
   },
@@ -2771,7 +2771,7 @@ export const pokemonData = [
     base_experience: "88",
     order: "313",
     is_default: "1",
-    name: "smeargle",
+    name: "ドーブル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/smeargle.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/smeargle.gif"}',
   },
@@ -2783,7 +2783,7 @@ export const pokemonData = [
     base_experience: "42",
     order: "152",
     is_default: "1",
-    name: "tyrogue",
+    name: "バルキー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/tyrogue.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/tyrogue.gif"}',
   },
@@ -2795,7 +2795,7 @@ export const pokemonData = [
     base_experience: "159",
     order: "155",
     is_default: "1",
-    name: "hitmontop",
+    name: "カポエラー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/hitmontop.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/hitmontop.gif"}',
   },
@@ -2807,7 +2807,7 @@ export const pokemonData = [
     base_experience: "61",
     order: "182",
     is_default: "1",
-    name: "smoochum",
+    name: "ムチュール",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/smoochum.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/smoochum.gif"}',
   },
@@ -2819,7 +2819,7 @@ export const pokemonData = [
     base_experience: "72",
     order: "184",
     is_default: "1",
-    name: "elekid",
+    name: "エレキッド",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/elekid.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/elekid.gif"}',
   },
@@ -2831,7 +2831,7 @@ export const pokemonData = [
     base_experience: "73",
     order: "187",
     is_default: "1",
-    name: "magby",
+    name: "ブビィ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/magby.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/magby.gif"}',
   },
@@ -2843,7 +2843,7 @@ export const pokemonData = [
     base_experience: "172",
     order: "314",
     is_default: "1",
-    name: "miltank",
+    name: "ミルタンク",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/miltank.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/miltank.gif"}',
   },
@@ -2855,7 +2855,7 @@ export const pokemonData = [
     base_experience: "608",
     order: "165",
     is_default: "1",
-    name: "blissey",
+    name: "ハピナス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/blissey.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/blissey.gif"}',
   },
@@ -2867,7 +2867,7 @@ export const pokemonData = [
     base_experience: "261",
     order: "315",
     is_default: "1",
-    name: "raikou",
+    name: "ライコウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/raikou.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/raikou.gif"}',
   },
@@ -2879,7 +2879,7 @@ export const pokemonData = [
     base_experience: "261",
     order: "316",
     is_default: "1",
-    name: "entei",
+    name: "エンテイ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/entei.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/entei.gif"}',
   },
@@ -2891,7 +2891,7 @@ export const pokemonData = [
     base_experience: "261",
     order: "317",
     is_default: "1",
-    name: "suicune",
+    name: "スイクン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/suicune.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/suicune.gif"}',
   },
@@ -2903,7 +2903,7 @@ export const pokemonData = [
     base_experience: "60",
     order: "318",
     is_default: "1",
-    name: "larvitar",
+    name: "ヨーギラス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/larvitar.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/larvitar.gif"}',
   },
@@ -2915,7 +2915,7 @@ export const pokemonData = [
     base_experience: "144",
     order: "319",
     is_default: "1",
-    name: "pupitar",
+    name: "サナギラス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/pupitar.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/pupitar.gif"}',
   },
@@ -2927,7 +2927,7 @@ export const pokemonData = [
     base_experience: "270",
     order: "320",
     is_default: "1",
-    name: "tyranitar",
+    name: "バンギラス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/tyranitar.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/tyranitar.gif"}',
   },
@@ -2939,7 +2939,7 @@ export const pokemonData = [
     base_experience: "306",
     order: "322",
     is_default: "1",
-    name: "lugia",
+    name: "ルギア",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/lugia.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/lugia.gif"}',
   },
@@ -2951,7 +2951,7 @@ export const pokemonData = [
     base_experience: "306",
     order: "323",
     is_default: "1",
-    name: "ho-oh",
+    name: "ホウオウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ho-oh.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ho-oh.gif"}',
   },
@@ -2963,7 +2963,7 @@ export const pokemonData = [
     base_experience: "270",
     order: "324",
     is_default: "1",
-    name: "celebi",
+    name: "セレビィ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/celebi.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/celebi.gif"}',
   },
@@ -2975,7 +2975,7 @@ export const pokemonData = [
     base_experience: "62",
     order: "325",
     is_default: "1",
-    name: "treecko",
+    name: "キモリ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/treecko.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/treecko.gif"}',
   },
@@ -2987,7 +2987,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "326",
     is_default: "1",
-    name: "grovyle",
+    name: "ジュプトル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/grovyle.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/grovyle.gif"}',
   },
@@ -2999,7 +2999,7 @@ export const pokemonData = [
     base_experience: "239",
     order: "327",
     is_default: "1",
-    name: "sceptile",
+    name: "ジュカイン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/sceptile.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/sceptile.gif"}',
   },
@@ -3011,7 +3011,7 @@ export const pokemonData = [
     base_experience: "62",
     order: "329",
     is_default: "1",
-    name: "torchic",
+    name: "アチャモ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/torchic.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/torchic.gif"}',
   },
@@ -3023,7 +3023,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "330",
     is_default: "1",
-    name: "combusken",
+    name: "ワカシャモ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/combusken.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/combusken.gif"}',
   },
@@ -3035,7 +3035,7 @@ export const pokemonData = [
     base_experience: "239",
     order: "331",
     is_default: "1",
-    name: "blaziken",
+    name: "バシャーモ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/blaziken.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/blaziken.gif"}',
   },
@@ -3047,7 +3047,7 @@ export const pokemonData = [
     base_experience: "62",
     order: "333",
     is_default: "1",
-    name: "mudkip",
+    name: "ミズゴロウ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/mudkip.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/mudkip.gif"}',
   },
@@ -3059,7 +3059,7 @@ export const pokemonData = [
     base_experience: "142",
     order: "334",
     is_default: "1",
-    name: "marshtomp",
+    name: "ヌマクロー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/marshtomp.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/marshtomp.gif"}',
   },
@@ -3071,7 +3071,7 @@ export const pokemonData = [
     base_experience: "241",
     order: "335",
     is_default: "1",
-    name: "swampert",
+    name: "ラグラージ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/swampert.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/swampert.gif"}',
   },
@@ -3083,7 +3083,7 @@ export const pokemonData = [
     base_experience: "56",
     order: "337",
     is_default: "1",
-    name: "poochyena",
+    name: "ポチエナ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/poochyena.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/poochyena.gif"}',
   },
@@ -3095,7 +3095,7 @@ export const pokemonData = [
     base_experience: "147",
     order: "338",
     is_default: "1",
-    name: "mightyena",
+    name: "グラエナ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/mightyena.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/mightyena.gif"}',
   },
@@ -3107,7 +3107,7 @@ export const pokemonData = [
     base_experience: "56",
     order: "339",
     is_default: "1",
-    name: "zigzagoon",
+    name: "ジグザグマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/zigzagoon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/zigzagoon.gif"}',
   },
@@ -3119,7 +3119,7 @@ export const pokemonData = [
     base_experience: "147",
     order: "340",
     is_default: "1",
-    name: "linoone",
+    name: "マッスグマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/linoone.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/linoone.gif"}',
   },
@@ -3131,7 +3131,7 @@ export const pokemonData = [
     base_experience: "56",
     order: "341",
     is_default: "1",
-    name: "wurmple",
+    name: "ケムッソ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/wurmple.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/wurmple.gif"}',
   },
@@ -3143,7 +3143,7 @@ export const pokemonData = [
     base_experience: "72",
     order: "342",
     is_default: "1",
-    name: "silcoon",
+    name: "カラサリス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/silcoon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/silcoon.gif"}',
   },
@@ -3155,7 +3155,7 @@ export const pokemonData = [
     base_experience: "178",
     order: "343",
     is_default: "1",
-    name: "beautifly",
+    name: "アゲハント",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/beautifly.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/beautifly.gif"}',
   },
@@ -3167,7 +3167,7 @@ export const pokemonData = [
     base_experience: "72",
     order: "344",
     is_default: "1",
-    name: "cascoon",
+    name: "マユルド",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/cascoon.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/cascoon.gif"}',
   },
@@ -3179,7 +3179,7 @@ export const pokemonData = [
     base_experience: "173",
     order: "345",
     is_default: "1",
-    name: "dustox",
+    name: "ドクケイル",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/dustox.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/dustox.gif"}',
   },
@@ -3191,7 +3191,7 @@ export const pokemonData = [
     base_experience: "44",
     order: "346",
     is_default: "1",
-    name: "lotad",
+    name: "ハスボー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/lotad.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/lotad.gif"}',
   },
@@ -3203,7 +3203,7 @@ export const pokemonData = [
     base_experience: "119",
     order: "347",
     is_default: "1",
-    name: "lombre",
+    name: "ハスブレロ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/lombre.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/lombre.gif"}',
   },
@@ -3215,7 +3215,7 @@ export const pokemonData = [
     base_experience: "216",
     order: "348",
     is_default: "1",
-    name: "ludicolo",
+    name: "ルンパッパ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ludicolo.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ludicolo.gif"}',
   },
@@ -3227,7 +3227,7 @@ export const pokemonData = [
     base_experience: "44",
     order: "349",
     is_default: "1",
-    name: "seedot",
+    name: "タネボー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/seedot.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/seedot.gif"}',
   },
@@ -3239,7 +3239,7 @@ export const pokemonData = [
     base_experience: "119",
     order: "350",
     is_default: "1",
-    name: "nuzleaf",
+    name: "コノハナ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/nuzleaf.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/nuzleaf.gif"}',
   },
@@ -3251,7 +3251,7 @@ export const pokemonData = [
     base_experience: "216",
     order: "351",
     is_default: "1",
-    name: "shiftry",
+    name: "ダーテング",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/shiftry.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/shiftry.gif"}',
   },
@@ -3263,7 +3263,7 @@ export const pokemonData = [
     base_experience: "54",
     order: "352",
     is_default: "1",
-    name: "taillow",
+    name: "スバメ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/taillow.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/taillow.gif"}',
   },
@@ -3275,7 +3275,7 @@ export const pokemonData = [
     base_experience: "159",
     order: "353",
     is_default: "1",
-    name: "swellow",
+    name: "オオスバメ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/swellow.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/swellow.gif"}',
   },
@@ -3287,7 +3287,7 @@ export const pokemonData = [
     base_experience: "54",
     order: "354",
     is_default: "1",
-    name: "wingull",
+    name: "キャモメ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/wingull.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/wingull.gif"}',
   },
@@ -3299,7 +3299,7 @@ export const pokemonData = [
     base_experience: "154",
     order: "355",
     is_default: "1",
-    name: "pelipper",
+    name: "ペリッパー",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/pelipper.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/pelipper.gif"}',
   },
@@ -3311,7 +3311,7 @@ export const pokemonData = [
     base_experience: "40",
     order: "356",
     is_default: "1",
-    name: "ralts",
+    name: "ラルトス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ralts.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ralts.gif"}',
   },
@@ -3323,7 +3323,7 @@ export const pokemonData = [
     base_experience: "97",
     order: "357",
     is_default: "1",
-    name: "kirlia",
+    name: "キルリア",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/kirlia.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/kirlia.gif"}',
   },
@@ -3335,7 +3335,7 @@ export const pokemonData = [
     base_experience: "233",
     order: "358",
     is_default: "1",
-    name: "gardevoir",
+    name: "サーナイト",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/gardevoir.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/gardevoir.gif"}',
   },
@@ -3347,7 +3347,7 @@ export const pokemonData = [
     base_experience: "54",
     order: "362",
     is_default: "1",
-    name: "surskit",
+    name: "アメタマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/surskit.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/surskit.gif"}',
   },
@@ -3359,7 +3359,7 @@ export const pokemonData = [
     base_experience: "159",
     order: "363",
     is_default: "1",
-    name: "masquerain",
+    name: "アメモース",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/masquerain.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/masquerain.gif"}',
   },
@@ -3371,7 +3371,7 @@ export const pokemonData = [
     base_experience: "59",
     order: "364",
     is_default: "1",
-    name: "shroomish",
+    name: "キノココ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/shroomish.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/shroomish.gif"}',
   },
@@ -3383,7 +3383,7 @@ export const pokemonData = [
     base_experience: "161",
     order: "365",
     is_default: "1",
-    name: "breloom",
+    name: "キノガッサ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/breloom.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/breloom.gif"}',
   },
@@ -3395,7 +3395,7 @@ export const pokemonData = [
     base_experience: "56",
     order: "366",
     is_default: "1",
-    name: "slakoth",
+    name: "ナマケロ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/slakoth.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/slakoth.gif"}',
   },
@@ -3407,7 +3407,7 @@ export const pokemonData = [
     base_experience: "154",
     order: "367",
     is_default: "1",
-    name: "vigoroth",
+    name: "ヤルキモノ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/vigoroth.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/vigoroth.gif"}',
   },
@@ -3419,7 +3419,7 @@ export const pokemonData = [
     base_experience: "252",
     order: "368",
     is_default: "1",
-    name: "slaking",
+    name: "ケッキング",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/slaking.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/slaking.gif"}',
   },
@@ -3431,7 +3431,7 @@ export const pokemonData = [
     base_experience: "53",
     order: "369",
     is_default: "1",
-    name: "nincada",
+    name: "ツチニン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/nincada.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/nincada.gif"}',
   },
@@ -3443,7 +3443,7 @@ export const pokemonData = [
     base_experience: "160",
     order: "370",
     is_default: "1",
-    name: "ninjask",
+    name: "テッカニン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/ninjask.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/ninjask.gif"}',
   },
@@ -3455,7 +3455,7 @@ export const pokemonData = [
     base_experience: "83",
     order: "371",
     is_default: "1",
-    name: "shedinja",
+    name: "ヌケニン",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/shedinja.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/shedinja.gif"}',
   },
@@ -3467,7 +3467,7 @@ export const pokemonData = [
     base_experience: "48",
     order: "372",
     is_default: "1",
-    name: "whismur",
+    name: "ゴニョニョ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/whismur.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/whismur.gif"}',
   },
@@ -3479,7 +3479,7 @@ export const pokemonData = [
     base_experience: "126",
     order: "373",
     is_default: "1",
-    name: "loudred",
+    name: "ドゴーム",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/loudred.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/loudred.gif"}',
   },
@@ -3491,7 +3491,7 @@ export const pokemonData = [
     base_experience: "221",
     order: "374",
     is_default: "1",
-    name: "exploud",
+    name: "バクオング",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/exploud.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/exploud.gif"}',
   },
@@ -3503,7 +3503,7 @@ export const pokemonData = [
     base_experience: "47",
     order: "375",
     is_default: "1",
-    name: "makuhita",
+    name: "マクノシタ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/makuhita.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/makuhita.gif"}',
   },
@@ -3515,7 +3515,7 @@ export const pokemonData = [
     base_experience: "166",
     order: "376",
     is_default: "1",
-    name: "hariyama",
+    name: "ハリテヤマ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/hariyama.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/hariyama.gif"}',
   },
@@ -3527,7 +3527,7 @@ export const pokemonData = [
     base_experience: "38",
     order: "256",
     is_default: "1",
-    name: "azurill",
+    name: "ルリリ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/azurill.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/azurill.gif"}',
   },
@@ -3539,7 +3539,7 @@ export const pokemonData = [
     base_experience: "75",
     order: "377",
     is_default: "1",
-    name: "nosepass",
+    name: "ノズパス",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/nosepass.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/nosepass.gif"}',
   },
@@ -3551,7 +3551,7 @@ export const pokemonData = [
     base_experience: "52",
     order: "379",
     is_default: "1",
-    name: "skitty",
+    name: "エネコ",
     sprites:
       '{"normal":"http://img.pokemondb.net/sprites/black-white/normal/skitty.png","animated":"http://img.pokemondb.net/sprites/black-white/anim/normal/skitty.gif"}',
   },
