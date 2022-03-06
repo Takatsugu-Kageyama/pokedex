@@ -17,7 +17,6 @@ const MyPageDedail = () => {
       setUserInfo(userDetail);
     })();
   }, []);
-
   return (
     <div className={styles.detail_container}>
       <dl className={styles.d_list}>
